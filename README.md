@@ -1,4 +1,4 @@
-Baldr
+Baldr - academic reading made easy
 =====
 
-Prototypes for Baldr - an online reading platform for students.
+This repo contains the prototypes for Baldr – an online reading platform for students.
