@@ -10,7 +10,7 @@
                 "outputStyle": "nested"
             },
             "linting.collapsed": false,
-            "brackets-git.gitPath": "git"
+            "brackets-git.gitPath": "gits"
         }
     }
 }
