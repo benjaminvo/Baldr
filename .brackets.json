@@ -1,12 +1,13 @@
 {
     "path": {
-        "css/scss/main.scss": {
+        "sass/main.scss": {
             "sass.enabled": true,
             "sass.options": {
-                "outputDir": "../",
+                "outputDir": "../css",
+                "includePaths": [],
                 "imagePath": null,
                 "sourceComments": "map",
-                "outputStyle": "compressed"
+                "outputStyle": "nested"
             },
             "linting.collapsed": false,
             "brackets-git.gitPath": "git"
