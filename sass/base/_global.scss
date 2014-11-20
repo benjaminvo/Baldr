@@ -6,7 +6,7 @@
 // Typography
 h1 {
     font-size: 3.5em;
-    font-family:
+    font-family: $font-sans-serif;
 }
 
 h2 {
@@ -27,5 +27,5 @@ p {
 }
 
 mark {
-   background-color: $color-primary-light; 
+    background-color: $color-primary-light; 
 }
