@@ -4,4 +4,28 @@
 // ...
 
 // Typography
-// ...
+h1 {
+    font-size: 3.5em;
+    font-family:
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    display: inline-block;
+    font-size: 1.4em;
+    padding-bottom: 0.2em;
+    border-bottom: 2px solid black;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.8em;
+    font-family: $font-serif;
+}
+
+mark {
+   background-color: $color-primary-light; 
+}
