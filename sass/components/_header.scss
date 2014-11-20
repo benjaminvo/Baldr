@@ -11,7 +11,9 @@ header .container {
 header .nav li {
     margin-left: 10px;
     
-    a { border-radius: 50%; }
+    a { border-radius: 50%;
+        line-height: 1em; // alm. line-height gør cirklen på hover oval.
+    }
 }
 
 header a {
