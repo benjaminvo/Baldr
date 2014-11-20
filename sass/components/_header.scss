@@ -1,12 +1,23 @@
+header {
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.15);
+}
+
+header .container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header .nav li {
+    margin-left: 10px;
+    
+    a { border-radius: 50%; }
+}
+
 header a {
     font-size: 1.25em;
     color: $color-base;
-}
-
-header li {
-    padding: 10px;
-}
-
-header li a {
-    border-radius: 50%;
+    
+    &:hover {
+        color: $color-base;
+    }
 }
