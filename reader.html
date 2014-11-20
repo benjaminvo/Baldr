@@ -20,59 +20,73 @@
         <![endif]-->
     </head>
     <body>
-
+       
+        <!-- Header -->
+        <header class="navbar" role="banner">
+            <div class="container">        
+                <a href="dashboard.html" class="navbar-brand">Baldr</a>    
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href=""><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a>
+                        </li>
+                        <li>
+                            <a href=""><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+                        </li>
+                    </ul>
+            </div> <!-- Container end -->
+        </header>
         
-        <section>
-          <div class="container">
-           <div>
+        <!-- Content -->
+        <section id="settings">
+            <div class="container">
                 <div class="row">
                     <div class="col-md-6">
                         <h3>Udseende</h3>
-                        
+                        <div class="btn-group" data-toggle="buttons">
+                            <label class="btn btn-primary active">
+                                <input type="radio" name="options" id="option1" autocomplete="off" checked>Day view
+                            </label>
+                            <label class="btn btn-primary">
+                                <input type="radio" name="options" id="option2" autocomplete="off">Night view
+                            </label>
+                        </div>
                     </div>
-                    
                     <div class="col-md-6">
                         <h3>Dine læsevenner</h3>
-
+                        <ul>
+                            <li><a href="#"><img src="img/collaborator-1.png" alt=""></a></li>
+                            <li><a href="#"><img src="img/collaborator-2.png" alt=""></a></li>
+                            <li><a href="#"><img src="img/collaborator-3.png" alt=""></a></li>
+                            <li class="hidden-collaborator"><a href="#"><img src="img/collaborator-4.png" alt=""></a></li>
                         </ul>
                     </div>
-                    </div>
-                </div>
+                </div> <!-- Row end -->
+            </div> <!-- Container end -->
+        </section>
+                
+            <div class="container">
                 <div class="row">
                     <div class="col-md-8   col-md-offset-2">
                         <h1>
                             Learning Web Design
                         </h1>
-                        <h2>
+                        <h2 class="book-chapter">
                             Chapter 1: Getting Started
                         </h2>
-                        <p>
-<mark>The Web has been around for more than 20 years now, experiencing euphoric early expansion, an economic-driven bust, an innovation-driven rebirth, and constant evolution along the way. </mark> One thing is certain: the Web as a communication and commercial medium is here to stay. <mark>Not only that, it has found its way onto devices such as smartphones, tablets, TVs, and more.</mark> There have never been more opportunities to put web design know- how to use. </p>
+                        <p><mark>The Web has been around for more than 20 years now, experiencing euphoric early expansion, an economic-driven bust, an innovation-driven rebirth, and constant evolution along the way. </mark> One thing is certain: the Web as a communication and commercial medium is here to stay.<mark> Not only that, it has found its way onto devices such as smartphones, tablets, TVs, and more.</mark> There have never been more opportunities to put web design know- how to use. </p>
 
-<p class="book-text">
-Through my experience teaching web design courses and workshops, I’ve had the opportunity to meet people of all backgrounds who are interested in learning how to build web pages. Allow me to introduce you to just a few: 
-“I’ve been a print designer for 17 years, and now I am feeling pressure to provide web design services.” 
-“I work as a secretary in a small office. My boss has asked me to put together a small internal website to share company information among employees.”
-</p>
-<p class="book-text">
-“I’ve been a programmer for years, but I want to try my hand at design. I feel like the Web is a good opportunity to explore new skills.”
-</p>
-<p class="book-text">
-“I am an artist and I want to know how to get samples of my paintings and sculpture online.” 
-“I tinkered with web pages in high school and I think it might be something I’d like to do for a living.”
-</p>
-<p class="book-text">
-Whatever the motivation, the first question is always the same: “Where do I start?” It may seem like there is a mountain of stuff to learn, and it’s not easy to know where to jump in. But you have to start somewhere.
-</p>
-<p class="book-text">
-This chapter attempts to put the learning curve in perspective by answering the most common questions I get asked by people ready to make the leap. It provides an introduction to the disciplines, technologies, and tools associ- ated with web design. 
-</p>
+                        <p>Through my experience teaching web design courses and workshops, I’ve had the opportunity to meet people of all backgrounds who are interested in learning how to build web pages. Allow me to introduce you to just a few: “I’ve been a print designer for 17 years, and now I am feeling pressure to provide web design services.” “I work as a secretary in a small office. My boss has asked me to put together a small internal website to share company information among employees.”</p>
 
+                        <p><mark>“I’ve been a programmer for years, but I want to try my hand at design. I feel like the Web is a good opportunity to explore new skills.”</mark></p>
 
-                        </p>
-                    </div>                
-                </div>
-                </div> <!--Container end-->
+                        <p>“I am an artist and I want to know how to get samples of my paintings and sculpture online.” “I tinkered with web pages in high school and I think it might be something I’d like to do for a living.”</p>
+                        
+                        <p> Whatever the motivation, the first question is always the same: “Where do I start?” It may seem like there is a mountain of stuff to learn, and it’s not easy to know where to jump in. But you have to start somewhere.</p>
+                        <p>This chapter attempts to put the learning curve in perspective by answering the most common questions I get asked by people ready to make the leap. It provides an introduction to the disciplines, technologies, and tools associ- ated with web design.</p>
+
+                    </div> <!-- col-md-8 end -->
+                </div> <!-- Row end -->
+            </div> <!-- Container end -->
         </section>
        
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

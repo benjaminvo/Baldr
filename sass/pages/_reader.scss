@@ -1,0 +1,41 @@
+h2.book-chapter {
+    margin-bottom: 50px;
+}
+
+#settings {
+    border-bottom: 1px solid $color-dark-grey;
+}
+
+#settings h3 {
+    padding-bottom: 0.2em;
+    border-bottom: 2px solid #000;
+}
+
+#settings .btn-group {
+    display: block;
+}
+
+#settings {
+    background-color: $color-bg;
+    padding: 20px 0;
+    margin-top: -20px; // for at rykke settings helt op til linjen på navbar - er der er en bedre måde at gøre det på?
+    display: block;
+}
+
+#settings ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+    li {
+        display: inline;
+        margin-right: 20px;
+    }
+}
+
+.hidden-collaborator { // class skal gives, når man toggler collaborators
+    opacity: 0.5;
+}
+
+
+
