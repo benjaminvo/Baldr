@@ -1,5 +1,7 @@
-$(document).ready(function(){
-  $(".glyphicon-cog").click(function(){
-    $(".dropdown").toggle();
-  });
-});
+//$(document).ready(function(){
+    
+    function toggleSettings() {
+        $(".dropdown").toggle();
+    }
+
+//});
