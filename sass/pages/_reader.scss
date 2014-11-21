@@ -59,19 +59,12 @@ h2.book-chapter {
 }
 
 .arrow-down {
-//	width: 0; 
-//	height: 0; 
-//	border-left: 23.5px solid transparent;
-//	border-right: 23.5px solid transparent;
-//	border-top: 20px solid #fff;
-    
-    
     position: absolute;
     margin-top: 18px;
     z-index: 1;
 }
 
-.nav-item-active_settings {
+.nav-item-active {
     z-index: 1;
     width: 30px;
     margin-top: 18px;
