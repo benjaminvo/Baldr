@@ -43,6 +43,9 @@ header .container {
         &:hover {
             background-color: $color-bg;
         }
+        &:active {
+            background-color: darken($color-bg, 5%);
+        }
     }
 }
 
