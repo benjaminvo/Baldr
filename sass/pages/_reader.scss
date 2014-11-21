@@ -2,37 +2,58 @@ h2.book-chapter {
     margin-bottom: 50px;
 }
 
-#settings {
-    border-bottom: 1px solid $color-dark-grey;
-}
-
-#settings h3 {
-    padding-bottom: 0.2em;
-    border-bottom: 2px solid #000;
-}
-
-#settings .btn-group {
-    display: block;
-}
-
-#settings {
+.dropdown {
     background-color: $color-bg;
     padding: 20px 0;
     margin-top: -20px; // for at rykke settings helt op til linjen på navbar - er der er en bedre måde at gøre det på?
+    // display: none;
+    border-bottom: 1px solid $color-dark-grey;
 }
 
-#settings ul {
+.dropdown h3 {
+    margin-bottom: 40px;
+}
+
+.settings {
+    margin-bottom: 20px;
+    
+}
+
+.dropdown ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: block;
     
     li {
-        display: inline;
+        display: inline-block;
         margin-right: 20px;
     }
 }
 
-.hidden-collaborator { // class skal gives, når man toggler collaborators
-    opacity: 0.5;
+.setting-font-size-small {
+    font-size: 1em;
 }
 
+.setting-font-size-medium {
+    font-size: 1.2em;
+}
+
+.setting-font-size-large {
+    font-size: 1.4em;
+}
+
+.collaborators img {
+    max-width: 100px;
+    border-radius: 50%;
+    border: 5px solid $color-primary; 
+}
+
+.collaborator-off img { // class skal gives, når man toggler collaborators
+    border: 5px solid $color-secondary;
+}
+
+h4.settings-headline {
+    font-size: 1.2em;
+    color: #aaa;
+}

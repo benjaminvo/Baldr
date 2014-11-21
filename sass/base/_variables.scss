@@ -4,13 +4,15 @@
 $color-base: #222222;
 $color-primary: #58B957;
 $color-primary-light: lighten($color-primary, 25%);
+$color-secondary: #D0021B;
 
 $color-dark-grey: #4A4A4A;
 $color-bg: #f6f6f6;
 
 // Typography
 $font-serif: Georgia, serif;
-$font-sans-serif: 'Brandon Bold', 'Helvetica Neue', sans-serif;
+$font-sans-serif: 'Brandon Regular', 'Helvetica Neue', sans-serif;
+$font-sans-serif-bold: 'Brandon Bold', 'Helvetica Neue', sans-serif;
 
 // Media Queries
 // ...
