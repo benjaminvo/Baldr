@@ -1,3 +1,33 @@
+.dark-mode {
+    background-color: $color-base;
+    color: #fff;
+    
+    .header {
+        background-color: darken($color-base, 4%);
+        
+        a {
+            color: #fff;
+            
+            &:hover {
+                background-color: $color-base;
+            }
+        }
+    }
+    
+    .dropdown {
+        background-color: lighten($color-base, 25%);
+        color: #fff;
+    }
+    
+    mark {
+        color: #fff;
+    }
+    
+    footer {
+        color: #fff;
+    }
+}
+
 h2.book-chapter {
     margin-bottom: 50px;
 }
