@@ -45,7 +45,7 @@
 
     a {
         display: block;
-        padding: 11px 15px;
+        padding: 10px 12px;
         font-size: 1.7em;
         line-height: 1em;
         border-radius: 50%;
@@ -54,14 +54,17 @@
             background-color: $color-bg;
         }
         &:active {
-            background-color: darken($color-bg, 5%);
+            //background-color: darken($color-bg, 5%);
+            background-color: #333;
+            
+            span {
+                color: #fff;
+            }
         }
     }
 }
 
-
-
-.nav-item-active {
+.nav-arrow {
     z-index: 1;
     width: 30px;
     margin-top: 17px;
