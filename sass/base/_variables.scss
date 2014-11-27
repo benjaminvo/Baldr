@@ -1,5 +1,11 @@
 // variables.scss holds all global variables for the project (for typography, color schemes, and so on)
 
+// Breakpoints
+
+$bp-small: 768px;
+$bp-medium: 992px;
+$bp-large: 1200px;
+
 // Colors
 $color-base: #222222;
 $color-primary: #58B957;
