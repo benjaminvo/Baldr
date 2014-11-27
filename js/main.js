@@ -1,7 +1,9 @@
+// Settings
 $('.nav-item_settings').click(function() {
     
     // Remove active class from other nav items
     $('a.nav-item-active').not(this).removeClass('nav-item-active');
+    
     // Toggle active class
     $(this).toggleClass('nav-item-active');
     
@@ -14,10 +16,12 @@ $('.nav-item_settings').click(function() {
     $(".nav-arrow_settings").toggle();
 });
 
+// Search
 $('.nav-item_search').click(function() {
     
     // Remove active class from other nav items
     $('a.nav-item-active').not(this).removeClass('nav-item-active');
+    
     // Toggle active class
     $(this).toggleClass('nav-item-active');
  
