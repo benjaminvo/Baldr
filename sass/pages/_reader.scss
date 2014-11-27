@@ -3,12 +3,17 @@ h2.book-chapter {
 }
 
 .dropdown {
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+    
     background-color: $color-bg;
     padding: 20px 0;
     margin-top: -20px; // -margin for at sætte dropdown sammen med headeren
     display: none;
     top: 75px;
     box-shadow: 0 1px 4px 0 rgba(0,0,0,.15);
+    overflow: auto;
 }
 
 .dropdown_settings {
@@ -21,12 +26,6 @@ h2.book-chapter {
 
 .setting-group {
     margin-bottom: 40px;
-}
-
-.dropdown {
-    position: fixed;
-    width: 100%;
-    z-index: 50;
 }
 
 .dropdown_settings ul { // Læsevenner ul
