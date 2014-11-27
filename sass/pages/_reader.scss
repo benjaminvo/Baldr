@@ -7,6 +7,10 @@ h2.book-chapter {
     top: 75px;
     bottom: 60px;
     
+    @media (min-width: $bp-medium) {
+        bottom: 150px;
+    }
+    
     width: 100%;
     padding: 20px 0;
 
