@@ -42,25 +42,36 @@
     float: left;
     list-style-type: none;
     position: relative;
+}
 
-    a {
-        display: block;
-        padding: 10px 12px;
-        font-size: 1.7em;
-        line-height: 1em;
-        border-radius: 50%;
-        
-        &:hover {
-            background-color: $color-bg;
+.nav-item {
+    display: block;
+    padding: 10px 12px;
+    font-size: 1.7em;
+    line-height: 1em;
+    border-radius: 50%;
+
+    &:hover {
+        background-color: $color-bg;
+    }
+    &:active {
+        background-color: $color-base;
+
+        span {
+            color: #fff;
         }
-        &:active {
-            //background-color: darken($color-bg, 5%);
-            background-color: #333;
+    }
+}
+
+.nav-item-active {
+    background-color: $color-base;
             
-            span {
-                color: #fff;
-            }
-        }
+    span {
+        color: #fff;
+    }
+    
+    &:hover {
+        background-color: $color-base;
     }
 }
 
