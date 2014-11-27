@@ -19,7 +19,7 @@ h2.book-chapter {
     margin-bottom: 20px;
 }
 
-.collaborators {
+.dropdown ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -59,7 +59,7 @@ h2.book-chapter {
 
 .arrow-down {
     position: absolute;
-    margin-top: 18px;
+    bottom: -19px;
     z-index: 1;
 }
 
@@ -74,3 +74,14 @@ h2.book-chapter {
     margin-right: auto;
     display: none;
 }
+
+
+
+
+
+
+
+
+
+
+
