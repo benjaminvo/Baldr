@@ -32,7 +32,9 @@
                         <img class="nav-item-active nav-item-active_settings" src="img/triangle-cut.png" alt="">
                     </li>
                     <li>
-                        <a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+                        <a class="nav-item-search" onclick="toggleSearch()" href="javascript:void(0);">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+                        <img class="nav-item-active nav-item-active_search" src="img/triangle-cut.png" alt="">
                     </li>
                 </ul>
             </div>
@@ -44,7 +46,7 @@
             <div class="container">
                 <div class="row">
                     <!-- Udseende -->
-                    <div class="col-md-6">
+                    <div class="col-sm-6">
                         <h3>Udseende</h3>
                         <!-- Baggrundsfarve -->
                         <div class="setting-group">
@@ -92,7 +94,7 @@
                     </div><!-- Udseende end -->
                     
                     <!-- Læsevenners noter -->
-                    <div class="col-md-6">
+                    <div class="col-sm-6">
                         <h3>Læsevenner</h3>
                         <ul class="collaborators">
                             <li><a href="#"><img src="img/collaborator-2.png" alt=""></a></li>
@@ -101,7 +103,11 @@
                     </div>
                 </div> <!-- Row end -->
             </div> <!-- Container end -->
-        </section> <!-- Dropdowns end -->
+        </section> <!-- Dropdown - settings end -->
+        
+           <section class="dropdown dropdown_search">
+            <h1>hej</h1>
+        </section> <!-- Dropdown - search end -->
 
         <main class="main-content">   
             <!-- Indhold -->

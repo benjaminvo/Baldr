@@ -8,8 +8,11 @@ h2.book-chapter {
     bottom: 60px;
     
     @media (min-width: $bp-medium) {
-        bottom: 150px;
+        bottom: 100px;
     }
+    
+    
+    
     
     width: 100%;
     padding: 20px 0;
@@ -23,6 +26,7 @@ h2.book-chapter {
     z-index: 50;
     display: none;
 }
+
 
 .dropdown_settings {
     text-align: center;
