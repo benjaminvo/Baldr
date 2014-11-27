@@ -10,6 +10,10 @@ h2.book-chapter {
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
+.dropdown_settings {
+    text-align: center;
+}
+
 .dropdown_settings h3 {
     margin-bottom: 40px;
 }
@@ -28,6 +32,10 @@ h2.book-chapter {
         display: inline-block; // Læsevenner på linje
         margin-right: 20px;
     }
+}
+
+.font-size-btn {
+    min-height: 45px;
 }
 
 .setting-font-size-small {
@@ -70,7 +78,17 @@ h2.book-chapter {
     display: none;
 }
 
-
+.new-collaborator {
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 100%;
+    border: 2px dashed #000;
+    display: inline-block;
+}
 
 
 
