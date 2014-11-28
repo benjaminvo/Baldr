@@ -58,6 +58,9 @@ p {
     line-height: 1.8em;
 }
 
-mark {
-    background-color: $color-primary-light; 
-}
+.highlight { background-color: $color-light-grey; }
+.highlight-yellow { background-color: #FAE598; }
+.highlight-green { background-color: #9EE9A2; }
+.highlight-blue { background-color: #98D4FA; }
+.highlight-red { background-color: #FF8CB7; }
+.highlight-purple { background-color: #EDB0ED; }
