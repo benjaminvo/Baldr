@@ -1,12 +1,37 @@
 .reading-position-indicator {
-//    position: fixed;
-//    top: 0;
-//    left: 0;
-//    
-//    height: 4px;
-//    width: 80%;
-//    
-//    z-index: 200;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 200;
     
+    width: 100%;
+    height: 2px;
     
+    // Reset the appearance
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+
+    // Get rid of the default border in Firefox/Opera
+    border: none;
+
+    // Progress bar container for Firefox/IE10+
+    background-color: transparent;
+
+    // Progress bar value for IE10+
+    color: $color-primary;
+    
+    // Vendor pseudo elements to style the value
+    &::-webkit-progress-bar {
+        background-color: transparent;
+    }
+
+    &::-webkit-progress-value {
+        background-color: $color-primary;
+    }
+
+    &::-moz-progress-bar {
+        background-color: $color-primary;
+    }
 }
+
