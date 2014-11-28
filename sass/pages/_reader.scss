@@ -97,7 +97,6 @@ h2.book-chapter {
     border: 5px solid $color-secondary;
 }
 
-
 .new-collaborator {
     margin: 0;
     padding: 0;
@@ -108,9 +107,36 @@ h2.book-chapter {
     border-radius: 100%;
     border: 2px dashed #000;
     display: inline-block;
+    padding-top: 25px;
 }
 
+.medium-reading {
+    h1 {
+        font-size: 8em;
+    }
+    
+    h2 {
+        font-size: 5em;
+    }
+    
+    p {
+        font-size: 3em;
+    }
+}
 
+.large-reading {
+    h1 {
+        font-size: 16em;
+    }
+    
+    h2 {
+        font-size: 10em;
+    }
+    
+    p {
+        font-size: 6em;
+    }
+}
 
 
 
