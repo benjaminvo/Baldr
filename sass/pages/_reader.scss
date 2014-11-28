@@ -79,20 +79,22 @@ h2.book-chapter {
     }
 }
 
-.font-size-btn {
-    min-height: 45px;
+.btn {
+    padding: 6px 20px;
 }
 
-.setting-font-size-small {
-    font-size: 1em;
+.btn-default {
+    height: 50px;
+    line-height: 37px;
+    
 }
 
-.setting-font-size-medium {
-    font-size: 1.2em;
+.btn-font-size-medium {
+    font-size: 1.6em;
 }
 
-.setting-font-size-large {
-    font-size: 1.4em;
+.btn-font-size-large {
+    font-size: 2em;
 }
 
 .collaborators img { // Læsevenner > billeder
