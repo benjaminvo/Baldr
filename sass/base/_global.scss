@@ -31,6 +31,20 @@ h3 {
 }
 
 h4 {
+    margin-top: 40px;
+    font-family: 'Brandon Medium', sans-serif;
+    font-size: 2.8em;
+}
+
+h5 {
+    font-family: 'Medium regular', sans-serif;
+    font-size: 2em;
+    margin-top: 40px;
+}
+
+
+
+h6 {
     font-family: $font-sans-serif-medium;
     text-transform: uppercase;
     font-size: 1.2em;
