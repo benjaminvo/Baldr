@@ -16,30 +16,6 @@ $('.nav-item_settings').click(function() {
     $(".nav-arrow_settings").toggle();
 });
 
-// DROPDOWN - SETTINGS - BUTTONS
-$('.btn-dark').click(function() {
-    $('body').addClass('dark-mode');
-});
-
-$('.btn-light').click(function() {
-    $('body').removeClass('dark-mode');
-});
-
-$('.btn-reading-small').click(function() {
-    $('main').removeClass('large-reading'); 
-    $('main').removeClass('medium-reading'); 
-});
-
-$('.btn-reading-medium').click(function() {
-    $('main').removeClass('large-reading'); 
-    $('main').addClass('medium-reading'); 
-});
-
-$('.btn-reading-large').click(function() {
-    $('main').removeClass('medium-reading'); 
-    $('main').addClass('large-reading'); 
-});
-
 // DROPDOWN - SEARCH
 $('.nav-item_search').click(function() {
     
@@ -58,37 +34,73 @@ $('.nav-item_search').click(function() {
     $(".nav-arrow_search").toggle();
 });
 
+// DROPDOWN - SETTINGS - BUTTONS
+
+// Dark/light mode
+$('.btn-dark').click(function() {
+    $('body').addClass('dark-mode');
+});
+
+$('.btn-light').click(function() {
+    $('body').removeClass('dark-mode');
+});
+
+// Font sizes
+$('.btn-reading-small').click(function() {
+    $('main').removeClass('large-reading'); 
+    $('main').removeClass('medium-reading');
+    resetReadingValue();
+});
+
+$('.btn-reading-medium').click(function() {
+    $('main').removeClass('large-reading'); 
+    $('main').addClass('medium-reading');
+    resetReadingValue();
+});
+
+$('.btn-reading-large').click(function() {
+    $('main').removeClass('medium-reading'); 
+    $('main').addClass('large-reading');
+    resetReadingValue();
+});
+
 
 // READING INDICATOR
 
-//// Determine the max value: subtract the window's height from the height of the document.
-//var winHeight = $(window).height(),
-//  docHeight = $(document).height();
-//  max = docHeight - winHeight;
-//
-//$('.reading-position-indicator').attr('max', max);
-//
-//// Calculate the value from the scroll
-//var value = $(window).scrollTop();
-//$('.reading-position-indicator').attr('value', value);
-//
-//
-//$(document).on('scroll', function() {
-//  value = $(window).scrollTop();
-//  progressBar.attr('value', value);
-//});
-
-// Determine the max value: subtract the window's height from the height of the document.
+// Variables
 var winHeight = $(window).height(), 
-      docHeight = $(document).height(),
-      progressBar = $('.reading-position-indicator'),
-      max, value;
+    docHeight = $(document).height(),
+    progressBar = $('.reading-position-indicator'),
+    max, value;
 
-  /* Set the max scrollable area */
-  max = docHeight - winHeight;
-  progressBar.attr('max', max);
+// Functions
+function setMaxScroll() {
+    max = docHeight - winHeight;
+    progressBar.attr('max', max);
+}
 
+function setReadingValue() {
+    value = $(window).scrollTop();
+    progressBar.attr('value', value);
+}
+
+function resetReadingValue() {
+    winHeight = $(window).height(),
+    docHeight = $(document).height();
+
+    setMaxScroll();
+    setReadingValue()
+}
+
+// Set the max scrollable area
+setMaxScroll();
+
+// Calculate reading value from scroll position
 $(document).on('scroll', function(){
- value = $(window).scrollTop();
- progressBar.attr('value', value);
+    setReadingValue();
+});
+
+// Recalculate reading value when user resizes window
+$(window).on('resize', function() {
+    resetReadingValue();
 });
