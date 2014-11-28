@@ -33,3 +33,11 @@ $('.nav-item_search').click(function() {
     $(".dropdown_search").toggle();
     $(".nav-arrow_search").toggle();
 });
+
+$('.btn-dark').click(function() {
+    $('body').addClass('dark-mode');
+        });
+
+$('.btn-light').click(function() {
+    $('body').removeClass('dark-mode');
+        });
