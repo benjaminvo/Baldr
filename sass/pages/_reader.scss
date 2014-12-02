@@ -30,6 +30,10 @@
     .new-collaborator {
         border: 2px dashed #fff;
     }
+    
+    .highlight-none {
+        background-color: $color-base; 
+    }
 }
 
 .dropdown {
@@ -273,6 +277,3 @@
         margin-top: 7px;
     }
 }
-
-
-
