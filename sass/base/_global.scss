@@ -21,28 +21,30 @@ h5 {
 
 h1 {
     font-size: $h1-font-size;
+    margin: 0 0 15px 0;
 }
 
 h2 {
     font-size: $h2-font-size;
-    margin-bottom: 50px;
+    // top, right, bottom, left
+    margin: 0 0 35px 0;
 }
 
 h3 {
     font-size: $h3-font-size;
-//    text-transform: uppercase;
+    margin: 35px 0 10px 0;
 }
 
 h4 {
     font-size: $h4-font-size;
-    margin-top: 40px;
+    text-transform: uppercase;
+    margin: 35px 0 10px 0;
 }
 
 h5 {
     font-size: $h5-font-size;
-    margin-top: 40px;
+    margin: 35px 0 10px 0;
 }
-
 
 
 h6 {
@@ -54,10 +56,77 @@ h6 {
 p {
     font-family: $font-serif;
     font-size: $p-font-size;
-    margin-bottom: 20px;
+    margin: 0 0 15px;
     line-height: 1.8em;
 }
 
+/*
+Hx > Lar. > Med. > Sma.
+H1 > 46px > 40px > 32px
+H2 > 36px > 32px > 26px
+H3 > 30px > 28px > 24px
+H4 > 28px > 26px > 22px
+p > 18px > 16px > 16px
+*/
+
+@media (max-width: $bp-medium) {
+    h1 {
+        font-size: $h1-font-size-medium;
+        margin: 0 0 20px 0;
+    }
+    
+    h2 {
+        font-size: $h2-font-size-medium;
+        margin: 0 0 30px 0;
+    }
+    
+    h3 {
+        font-size: $h3-font-size-medium;
+    }
+    
+    h4 {
+        font-size: $h4-font-size-medium;
+    }
+    
+    h5 {
+        font-size: $h5-font-size-medium;
+    }
+    
+    p {
+        font-size: $p-font-size-medium;
+    }
+}
+
+@media (max-width: $bp-small) {
+    h1 {
+        font-size: $h1-font-size-small;
+        margin: 0 0 10px 0;
+    }
+    
+    h2 {
+        font-size: $h2-font-size-small;
+        margin: 0 0 20px 0;
+    }
+    
+    h3 {
+        font-size: $h3-font-size-small;
+    }
+    
+    h4 {
+        font-size: $h4-font-size-small;
+    }
+    
+    h5 {
+        font-size: $h5-font-size-small;
+    }
+    
+    p {
+        font-size: $p-font-size-small;
+    }
+}
+
+
+// Highlight colors
 .highlight { background-color: $color-light-grey; }
 .highlight-yellow { background-color: #FAE598; }
 .highlight-green { background-color: #9EE9A2; }
