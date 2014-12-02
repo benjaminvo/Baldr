@@ -131,7 +131,6 @@ p > 18px > 16px > 16px
     }
 }
 
-
 // Highlight colors
 .highlight { background-color: $color-light-grey; }
 .highlight-yellow { background-color: #FAE598; }
@@ -139,3 +138,4 @@ p > 18px > 16px > 16px
 .highlight-blue { background-color: #98D4FA; }
 .highlight-red { background-color: #FF8CB7; }
 .highlight-purple { background-color: #EDB0ED; }
+.highlight-none { background-color: rgba(255, 255, 255, 1); }
