@@ -114,7 +114,6 @@
     display: inline-block;
     padding-top: 25px;
 }
-
 .medium-reading {
     h1 {
         font-size: $h1-font-size*1.15;
@@ -144,7 +143,15 @@
     }
 }
 
-.main-content h3 {
+// Media query to position the dropdown and arrow accordingly to the header
+@media(max-width: $bp-large) {
+    .dropdown {
+        top: 54px;
+    }
+    
+    .nav-arrow {
+        margin-top: 7px;
+    }
 }
 
 
