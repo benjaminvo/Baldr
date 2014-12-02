@@ -122,33 +122,96 @@
     padding-top: 25px;
 }
 
-@media (min-width: $bp-large) {
+// Font-size toggle for large screens
+.medium-reading {
+    h1 {
+        font-size: $h1-font-size*1.15;
+    }
+
+
+    h2 {
+        font-size: $h2-font-size*1.15;
+    }
+
+    p {
+        font-size: $p-font-size*1.15;
+    }
+}
+
+.large-reading {
+    h1 {
+        font-size: $h1-font-size*1.3;
+    }
+
+    h2 {
+        font-size: $h2-font-size*1.3;
+    }
+
+    p {
+        font-size: $p-font-size*1.3;
+    }
+}
+
+// Font-size toggles for medium screens
+@media(max-width: $bp-medium) {
     .medium-reading {
         h1 {
-            font-size: $h1-font-size*1.15;
+            font-size: $h1-font-size-medium*1.15;
         }
 
 
         h2 {
-            font-size: $h2-font-size*1.15;
+            font-size: $h2-font-size-medium*1.15;
         }
 
         p {
-            font-size: $p-font-size*1.15;
+            font-size: $p-font-size-medium*1.15;
         }
     }
 
     .large-reading {
         h1 {
-            font-size: $h1-font-size*1.3;
+            font-size: $h1-font-size-medium*1.3;
         }
 
         h2 {
-            font-size: $h2-font-size*1.3;
+            font-size: $h2-font-size-medium*1.3;
         }
 
         p {
-            font-size: $p-font-size*1.3;
+            font-size: $p-font-size-medium*1.3;
+        }
+    }
+}
+
+// Font-size toggle for small screens
+@media(max-width: $bp-small) {
+    .medium-reading {
+        h1 {
+            font-size: $h1-font-size-small*1.15;
+        }
+
+
+        h2 {
+            font-size: $h2-font-size-small*1.15;
+        }
+
+        p {
+            font-size: $p-font-size-small*1.15;
+        }
+    }
+
+    .large-reading {
+        h1 {
+            font-size: $h1-font-size-small*1.3;
+        }
+
+        h2 {
+            font-size: $h2-font-size-small*1.3;
+        }
+
+        p {
+            font-size: $p-font-size-small*1.3;
         }
     }
 }
