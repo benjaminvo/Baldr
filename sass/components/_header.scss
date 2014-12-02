@@ -11,7 +11,7 @@
     background-color: rgba(255,255,255,.95);
     
     z-index: 100;
-    transition: padding .15s ease-in-out;
+    transition: all .15s ease-in-out;
 }
 
 @media(min-width: $bp-large) {
@@ -24,11 +24,13 @@
     .header-active-settings {
         padding-top: 10px;
         padding-bottom: 10px;
+        background-color: rgba(255, 255, 255, 1);
     }
     
     .header-active-search {
         padding-top: 10px;
         padding-bottom: 10px;
+        background-color: rgba(255, 255, 255, 1);
     }
 }
 
