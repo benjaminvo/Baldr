@@ -23,9 +23,37 @@ $font-sans-serif: 'Brandon Regular', 'Helvetica Neue', sans-serif;
 $font-sans-serif-medium: 'Brandon Medium', 'Helvetica Neue', sans-serif;
 $font-sans-serif-bold: 'Brandon Bold', 'Helvetica Neue', sans-serif;
 
+/*
+Hx > Lar. > Med. > Sma.
+H1 > 46px > 40px > 32px
+H2 > 36px > 32px > 26px
+H3 > 30px > 28px > 24px
+H4 > 28px > 26px > 22px
+h5 > 20px > 18px > 18px
+p  > 18px > 16px > 16px
+*/
+
 $h1-font-size: 4.6em;
+$h1-font-size-medium: 4.0em;
+$h1-font-size-small: 3.2em;
+    
 $h2-font-size: 3.6em;
+$h2-font-size-medium: 3.2em;
+$h2-font-size-small: 2.6em;
+
 $h3-font-size: 3.0em;
-$h4-font-size: 2.6em;
+$h3-font-size-medium: 2.8em;
+$h3-font-size-small: 2.4em;
+
+
+$h4-font-size: 2.2em;
+$h4-font-size-medium: 2.0em;
+$h4-font-size-small: 2.0em;
+
 $h5-font-size: 2.0em;
+$h5-font-size-medium: 1.8em;
+$h5-font-size-small: 1.8em;
+
 $p-font-size: 1.8em;
+$p-font-size-medium: 1.6em;
+$p-font-size-small: 1.6em;
