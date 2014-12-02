@@ -277,6 +277,16 @@ $(document).ready(function(){
         $('.main-content').html($('.main-content').html().replace(highlight, spn));   
     });
 });
+       
+// Blue
+$(document).ready(function(){
+    $(".tooltip-button-blue").click(function(){
+       var highlight = window.getSelection();
+       
+        var spn = '<mark class="highlight-blue">' + highlight + '</mark>';
+        $('.main-content').html($('.main-content').html().replace(highlight, spn));   
+    });
+});
 
 // Red
 $(document).ready(function(){
@@ -288,12 +298,22 @@ $(document).ready(function(){
     });
 });
        
-// Blue
+// Purple
 $(document).ready(function(){
-    $(".tooltip-button-blue").click(function(){
+    $(".tooltip-button-purple").click(function(){
        var highlight = window.getSelection();
        
-        var spn = '<mark class="highlight-blue">' + highlight + '</mark>';
+        var spn = '<mark class="highlight-purple">' + highlight + '</mark>';
+        $('.main-content').html($('.main-content').html().replace(highlight, spn));   
+    });
+});
+       
+// None
+$(document).ready(function(){
+    $(".tooltip-button-none").click(function(){
+       var highlight = window.getSelection();
+       
+        var spn = '<mark class="highlight-none">' + highlight + '</mark>';
         $('.main-content').html($('.main-content').html().replace(highlight, spn));   
     });
 });
