@@ -17,19 +17,11 @@
 }
 
 @media(min-width: $bp-large) {
-    .header:hover {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
     
-    // Class for keeping the header big, when the dropdown is open
-    .header-active-settings {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        background-color: rgba(255, 255, 255, 1);
-    }
-    
-    .header-active-search {
+    // Classes for keeping the header big, when the dropdown is active
+    .header:hover,
+    .dropdown-active_settings,
+    .dropdown-active_search {
         padding-top: 10px;
         padding-bottom: 10px;
         background-color: rgba(255, 255, 255, 1);

@@ -16,9 +16,8 @@ $('.nav-item_settings').click(function() {
     $(".nav-arrow_settings").toggle();
     
     // Keeps header big, when dropdown is open
-    $(".header").removeClass("header-active-search");
-    $(".header").toggleClass("header-active-settings");
-    
+    $(".header").removeClass("dropdown-active_search");
+    $(".header").toggleClass("dropdown-active_settings");
 });
 
 // DROPDOWN - SEARCH
@@ -39,8 +38,8 @@ $('.nav-item_search').click(function() {
     $(".nav-arrow_search").toggle();
     
     // Keeps header big, when dropdown is open
-    $(".header").removeClass("header-active-settings");
-    $(".header").toggleClass("header-active-search");
+    $(".header").removeClass("dropdown-active_settings");
+    $(".header").toggleClass("dropdown-active_search");
 });
 
 // DROPDOWN - SETTINGS - BUTTONS
