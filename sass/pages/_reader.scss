@@ -79,13 +79,18 @@
     }
 }
 
+.setting-font-size {
+    font-family: $font-serif;
+}
+
 .btn-font-size-medium {
-    font-size: 1.6em;
+    font-size: $p-font-size*1.15;
 }
 
 .btn-font-size-large {
-    font-size: 2em;
+    font-size: $p-font-size*1.3;
 }
+
 
 .collaborators img { // Læsevenner > billeder
     max-width: 100px;
@@ -114,6 +119,7 @@
     h1 {
         font-size: $h1-font-size*1.15;
     }
+    
     
     h2 {
         font-size: $h2-font-size*1.15;
