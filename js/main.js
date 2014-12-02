@@ -1,21 +1,30 @@
 // HEADER
 $(window).scroll(function() {
-    if ($(this).scrollTop() > 20){  
-        $('.header').addClass("header-inactive");
+    if ($(this).scrollTop() > 20) {  
+        $(".header").addClass("header-inactive");
+        //$("body").removeClass("dropdown-active"); // Remove dropdown class  
     }
     else {
-        $('.header').removeClass("header-inactive");
+        $(".header").removeClass("header-inactive");
     }
 });
 
+
 // DROPDOWN - SETTINGS
-$('.nav-item_settings').click(function() {
+$(".nav-item_settings").click(function() {
     
     // Remove active class from other nav items
-    $('a.nav-item-active').not(this).removeClass('nav-item-active');
+    $('a.nav-item-active').not(this).removeClass("nav-item-active");
+
+    // Give body a dropdown-active class - remove if user clicks on already active dropdown
+    if ( !$(this).hasClass("nav-item-active") ) {
+        $("body").addClass("dropdown-active");
+    } else {
+        $("body").removeClass("dropdown-active");
+    }
     
-    // Toggle active class
-    $(this).toggleClass('nav-item-active');
+    // Toggle active class for nav item
+    $(this).toggleClass("nav-item-active");
     
     // Untoggle search dropdown
     $(".dropdown_search").hide();
@@ -27,7 +36,7 @@ $('.nav-item_settings').click(function() {
     
     // Keeps header big, when dropdown is open
     $(".header").removeClass("header-inactive");
-//    $(".header").addClass("dropdown-active");
+    
 });
 
 // DROPDOWN - SEARCH
@@ -36,8 +45,15 @@ $('.nav-item_search').click(function() {
     // Remove active class from other nav items
     $('a.nav-item-active').not(this).removeClass('nav-item-active');
     
-    // Toggle active class
-    $(this).toggleClass('nav-item-active');
+    // Give body a dropdown-active class - remove if user clicks on already active dropdown
+    if ( !$(this).hasClass("nav-item-active") ) {
+        $("body").addClass("dropdown-active");
+    } else {
+        $("body").removeClass("dropdown-active");
+    }
+
+    // Toggle active class for nav item
+    $(this).toggleClass("nav-item-active");
  
     // Untoggle settings dropdown
     $(".dropdown_settings").hide();
@@ -49,7 +65,7 @@ $('.nav-item_search').click(function() {
     
     // Keeps header big, when dropdown is open
     $(".header").removeClass("header-inactive");
-    $(".header").addClass("dropdown-active");
+    
 });
 
 // DROPDOWN - SETTINGS - BUTTONS

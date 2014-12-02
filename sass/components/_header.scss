@@ -20,7 +20,8 @@
     
     // Classes for keeping the header big, when the dropdown is active
     .header,
-    .header:hover {
+    .header:hover,
+    body.dropdown-active .header {
         padding-top: 10px;
         padding-bottom: 10px;
         background-color: rgba(255, 255, 255, 1);
