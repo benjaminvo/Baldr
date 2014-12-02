@@ -54,16 +54,19 @@
     display: none;
 }
 
+.dropdown .container {
+    padding: 20px 0;
+}
+
+.dropdown h4 {
+    margin: 0 0 20px 0;
+}
 
 .dropdown_settings {
     text-align: center;
 }
 
 .dropdown_settings h3 {
-    margin-bottom: 40px;
-}
-
-.setting-group {
     margin-bottom: 40px;
 }
 
@@ -102,6 +105,10 @@
     border: 5px solid $color-secondary;
 }
 
+.reading-buddies {
+    margin: 5px 0 0 0;
+}
+
 .new-collaborator {
     margin: 0;
     padding: 0;
@@ -114,32 +121,35 @@
     display: inline-block;
     padding-top: 25px;
 }
-.medium-reading {
-    h1 {
-        font-size: $h1-font-size*1.15;
-    }
-    
-    
-    h2 {
-        font-size: $h2-font-size*1.15;
-    }
-    
-    p {
-        font-size: $p-font-size*1.15;
-    }
-}
 
-.large-reading {
-    h1 {
-        font-size: $h1-font-size*1.3;
+@media (min-width: $bp-large) {
+    .medium-reading {
+        h1 {
+            font-size: $h1-font-size*1.15;
+        }
+
+
+        h2 {
+            font-size: $h2-font-size*1.15;
+        }
+
+        p {
+            font-size: $p-font-size*1.15;
+        }
     }
-    
-    h2 {
-        font-size: $h2-font-size*1.3;
-    }
-    
-    p {
-        font-size: $p-font-size*1.3;
+
+    .large-reading {
+        h1 {
+            font-size: $h1-font-size*1.3;
+        }
+
+        h2 {
+            font-size: $h2-font-size*1.3;
+        }
+
+        p {
+            font-size: $p-font-size*1.3;
+        }
     }
 }
 
