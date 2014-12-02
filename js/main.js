@@ -1,3 +1,13 @@
+// HEADER
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 20){  
+        $('.header').addClass("header-inactive");
+    }
+    else {
+        $('.header').removeClass("header-inactive");
+    }
+});
+
 // DROPDOWN - SETTINGS
 $('.nav-item_settings').click(function() {
     
@@ -16,8 +26,8 @@ $('.nav-item_settings').click(function() {
     $(".nav-arrow_settings").toggle();
     
     // Keeps header big, when dropdown is open
-    $(".header").removeClass("dropdown-active_search");
-    $(".header").toggleClass("dropdown-active_settings");
+    $(".header").removeClass("header-inactive");
+//    $(".header").addClass("dropdown-active");
 });
 
 // DROPDOWN - SEARCH
@@ -38,8 +48,8 @@ $('.nav-item_search').click(function() {
     $(".nav-arrow_search").toggle();
     
     // Keeps header big, when dropdown is open
-    $(".header").removeClass("dropdown-active_settings");
-    $(".header").toggleClass("dropdown-active_search");
+    $(".header").removeClass("header-inactive");
+    $(".header").addClass("dropdown-active");
 });
 
 // DROPDOWN - SETTINGS - BUTTONS

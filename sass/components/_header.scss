@@ -8,7 +8,7 @@
     padding-bottom: 0;
     
     box-shadow: 0 1px 4px 0 rgba(0,0,0,.15);
-    background-color: rgba(255,255,255,.95);
+    background-color: rgba(255,255,255,1);
     
     z-index: 100;
     transition: all .15s ease-in-out;
@@ -16,15 +16,19 @@
     a { color: $color-base; }
 }
 
-@media(min-width: $bp-large) {
+@media(min-width: $bp-medium) {
     
     // Classes for keeping the header big, when the dropdown is active
-    .header:hover,
-    .dropdown-active_settings,
-    .dropdown-active_search {
+    .header,
+    .header:hover {
         padding-top: 10px;
         padding-bottom: 10px;
         background-color: rgba(255, 255, 255, 1);
+    }
+    .header-inactive {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        background-color: rgba(255, 255, 255, .95);
     }
 }
 
@@ -60,7 +64,7 @@
     line-height: 1em;
     border-radius: 50%;
 
-    @media(min-width: $bp-small) {
+    @media(min-width: $bp-medium) {
         &:hover {
             background-color: $color-bg-light;
         }
