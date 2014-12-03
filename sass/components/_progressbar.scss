@@ -34,7 +34,16 @@
 
     &::-moz-progress-bar {
         background-color: $color-primary;
-    }
+    }    
+}
+
+    
+// Reading timer
+.reading-position-wrapper .reading-time {
+    position: absolute;
+    right: 40px;
+    bottom: -20px;
+    color: $color-base;
 }
 
 .header:hover .reading-position-indicator {
