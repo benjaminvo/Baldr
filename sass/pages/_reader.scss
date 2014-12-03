@@ -94,13 +94,12 @@
 }
 
 .btn-font-size-medium {
-    font-size: $p-font-size*1.15;
+    font-size: 1.4em;
 }
 
 .btn-font-size-large {
-    font-size: $p-font-size*1.3;
+    font-size: 1.8em;
 }
-
 
 .collaborators img { // Læsevenner > billeder
     max-width: 100px;
@@ -127,6 +126,16 @@
     border: 2px dashed #000;
     display: inline-block;
     padding-top: 25px;
+}
+
+.collaborator-notes {
+    position: absolute;
+    color: blue;
+    display: none;
+    padding-top: 95px;
+    padding-left: 55px;
+    top: 0;
+    left: 0;
 }
 
 // Font-size toggle for large screens
@@ -278,5 +287,9 @@
     
     .nav-arrow {
         margin-top: 7px;
+    }
+    
+    .setting-collaborators {
+        margin-top: 40px;
     }
 }
