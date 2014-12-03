@@ -2,7 +2,8 @@
     background-color: $color-base;
     color: #fff;
     
-    .header {
+    .header,
+    .dropdown-active .header {
         background-color: darken($color-base, 4%);
         
         a {
@@ -44,6 +45,8 @@
     @media (min-width: $bp-medium) {
         bottom: auto;
     }
+    
+    transition: all 0.15s ease-in-out;
     
     width: 100%;
     padding: 20px 0;
