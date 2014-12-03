@@ -9,6 +9,8 @@
 body {
     font-size: 10px;
     font-family: $font-sans-serif;
+
+    transition: background .15s ease-in-out; // Fade dark mode
 }
 
 h1,
