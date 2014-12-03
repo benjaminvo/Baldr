@@ -14,6 +14,11 @@
     transition: all .15s ease-in-out;
     
     a { color: $color-base; }
+    
+    // Transition height of reading indicator
+    &:hover .reading-position-indicator {
+        height: 5px;
+    }
 }
 
 @media(min-width: $bp-medium) {
