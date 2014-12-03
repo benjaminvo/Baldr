@@ -138,3 +138,8 @@ $(document).on('scroll', function(){
 $(window).on('resize', function() {
     resetReadingValue();
 });
+
+$(".toggle-notes").click(function() {
+    $('.collaborator-notes').toggle();
+    $('.main-content').toggle();
+});
