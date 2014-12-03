@@ -1,3 +1,7 @@
+.reading-position-wrapper {
+    position: relative;
+}
+
 .reading-position-indicator {
     position: fixed;
     left: 0;
@@ -37,9 +41,7 @@
     }    
 }
 
-    
-// Reading timer
-.reading-position-wrapper .reading-time {
+.reading-time {
     position: absolute;
     right: 40px;
     bottom: -20px;
