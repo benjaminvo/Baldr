@@ -105,7 +105,8 @@ $('.btn-reading-large').click(function() {
 var winHeight = $(window).height(), 
     docHeight = $(document).height(),
     progressBar = $('.reading-position-indicator'),
-    max, value;
+    readingTime = $('.reading-time'),
+    max, value, valueProcent;
 
 // Functions
 function setMaxScroll() {
@@ -123,15 +124,54 @@ function resetReadingValue() {
     docHeight = $(document).height();
 
     setMaxScroll();
-    setReadingValue()
+    setReadingValue();
 }
 
-// Set the max scrollable area
+// Set the maximum scrollable area
 setMaxScroll();
 
-// Calculate reading value from scroll position
+// Scroll scripts for reading indicator
 $(document).on('scroll', function(){
+    
+    // Set reading value from scroll position
     setReadingValue();
+    
+    // Calculate the current value in procent
+    valueProcent = (value/max)*100;
+    
+    // Display remaning reading time 
+    if  (valueProcent < 10) {
+        readingTime.html("10 min");
+    } else if 
+        (valueProcent > 10 && valueProcent < 20) {
+        readingTime.html("9 min");
+    } else if 
+        (valueProcent > 20 && valueProcent < 30) {
+        readingTime.html("8 min");
+    } else if 
+        (valueProcent > 30 && valueProcent < 40) {
+        readingTime.html("7 min");
+    } else if 
+        (valueProcent > 40 && valueProcent < 50) {
+        readingTime.html("6 min");
+    } else if 
+        (valueProcent > 50 && valueProcent < 60) {
+        readingTime.html("5 min");
+    } else if 
+        (valueProcent > 60 && valueProcent < 70) {
+        readingTime.html("4 min");
+    } else if 
+        (valueProcent > 70 && valueProcent < 80) {
+        readingTime.html("3 min");
+    } else if 
+        (valueProcent > 80 && valueProcent < 90) {
+        readingTime.html("2 min");
+    } else if 
+        (valueProcent > 90 && valueProcent < 100) {
+        readingTime.html("1 min");
+    } else {
+        readingTime.html("0 min");
+    }
 });
 
 // Recalculate reading value when user resizes window
