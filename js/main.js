@@ -180,6 +180,6 @@ $(window).on('resize', function() {
 });
 
 $(".toggle-notes").click(function() {
-    $('.collaborator-notes').toggle();
-    $('.main-content').toggle();
+    $('.collaborator-notes').toggleClass("visible");
+    $('.own-notes').toggleClass("not-visible");
 });
