@@ -101,6 +101,7 @@
     font-size: 1.8em;
 }
 
+
 .collaborators img { // Læsevenner > billeder
     max-width: 100px;
     border-radius: 50%;
@@ -130,12 +131,18 @@
 
 .collaborator-notes {
     position: absolute;
-    color: blue;
-    display: none;
-    padding-top: 95px;
-    padding-left: 55px;
+    visibility: hidden;
+    padding: 0 15px;
     top: 0;
     left: 0;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.not-visible {
+    visibility: hidden;
 }
 
 // Font-size toggle for large screens
@@ -153,6 +160,10 @@
         font-size: $p-font-size*1.15;
     }
 }
+
+.setting-collaborators {
+        margin-top: 40px;
+    }
 
 .large-reading {
     h1 {
@@ -287,9 +298,5 @@
     
     .nav-arrow {
         margin-top: 7px;
-    }
-    
-    .setting-collaborators {
-        margin-top: 40px;
     }
 }
