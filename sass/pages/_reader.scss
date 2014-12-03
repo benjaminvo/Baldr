@@ -161,10 +161,6 @@
     }
 }
 
-.setting-collaborators {
-        margin-top: 40px;
-    }
-
 .large-reading {
     h1 {
         font-size: $h1-font-size*1.3;
@@ -291,12 +287,18 @@
 }
 
 // Media query to position the dropdown and arrow accordingly to the header
-@media(max-width: $bp-large) {
+@media(max-width: $bp-medium) {
     .dropdown {
         top: 54px;
     }
     
     .nav-arrow {
         margin-top: 7px;
+    }
+}
+
+@media(max-width: $bp-small) {
+    .setting-collaborators {
+        margin-top: 40px;
     }
 }
