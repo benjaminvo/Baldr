@@ -4,8 +4,8 @@
     min-height: 50px;
     width: 100%;
     
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 0;    // No padding on mobile
+    padding-bottom: 0; // No padding on mobile
     
     box-shadow: 0 1px 4px 0 rgba(0,0,0,.15);
     background-color: rgba(255,255,255,1);
@@ -21,7 +21,7 @@
     // Classes for keeping the header big, when the dropdown is active
     .header,
     .header:hover,
-    body.dropdown-active .header {
+    .dropdown-active .header {
         padding-top: 10px;
         padding-bottom: 10px;
         background-color: rgba(255, 255, 255, 1);
