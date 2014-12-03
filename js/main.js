@@ -139,7 +139,7 @@ $(document).on('scroll', function(){
     // Calculate the current value in procent
     valueProcent = (value/max)*100;
     
-    // Display remaning reading time 
+    // Display remaining reading time 
     if  (valueProcent < 10) {
         readingTime.html("10 min");
     } else if 
