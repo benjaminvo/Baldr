@@ -20,11 +20,6 @@
             text-decoration: none;
         }
     }
-    
-    // Transition height of reading indicator
-    &:hover .reading-position-indicator {
-        height: 5px;
-    }
 }
 
 @media(min-width: $bp-medium) {
@@ -98,11 +93,7 @@
 }
 
 
-@media(min-width: $bp-medium) {
-    .nav-item:hover .nav-item-text {
-        text-decoration: underline;
-    }
-    
+@media(min-width: $bp-medium) {    
     .nav-item:hover .nav-item-icon { 
         background-color: $color-bg-light;
     }
