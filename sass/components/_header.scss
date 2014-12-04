@@ -107,14 +107,14 @@
         background-color: $color-bg-light;
     }
     .nav-item-active:hover .nav-item-icon { 
-        background-color: $color-base;
+        background-color: $color-primary;
         color: #ffffff;
     }
 }
 
 .nav-item:active .nav-item-icon,
 .nav-item-active .nav-item-icon {
-    background-color: $color-base;
+    background-color: $color-primary;
     color: #ffffff;
 }
 
