@@ -91,9 +91,18 @@
         padding: 10px 12px;
         border-radius: 50%;
     }
+    
+    .nav-item-text {
+        margin-left: 10px;
+    }
 }
 
+
 @media(min-width: $bp-medium) {
+    .nav-item:hover .nav-item-text {
+        text-decoration: underline;
+    }
+    
     .nav-item:hover .nav-item-icon { 
         background-color: $color-bg-light;
     }
@@ -119,13 +128,4 @@
     margin-left: auto;
     margin-right: auto;
     display: none;
-}
-
-.chapter-current {
-    margin-left: 10px;
-    
-    
-    &:visited {
-        text-decoration: none;
-    }
 }
