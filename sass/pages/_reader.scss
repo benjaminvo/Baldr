@@ -178,6 +178,11 @@ img.collaborator-on {
     }
 }
 
+.search-result-active {
+    font-family: $font-sans-serif-medium;
+    background-color: lightgrey;
+}
+
 // Font-size toggle for large screens
 .medium-reading {
     h1 {
