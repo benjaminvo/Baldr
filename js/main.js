@@ -238,7 +238,7 @@ $('.result').click(function() {
     $('#result-2').addClass('search-result-active');
     $('#result-2').delay(2000).queue(function() {
         $(this).removeClass('search-result-active');
-    })
+    });
     $('.dropdown_search').hide();
     $(".nav-arrow_search").hide();
     $("body").removeClass("dropdown-active");
