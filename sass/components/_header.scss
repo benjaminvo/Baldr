@@ -84,33 +84,29 @@
 
 .nav-item {
     display: block;
-        
     font-size: 1.7em;
     line-height: 1em;
     
-    .glyphicon {
+    .nav-item-icon {
         padding: 10px 12px;
         border-radius: 50%;
     }
+}
 
-    @media(min-width: $bp-medium) {
-        &:hover .glyphicon {
-            background-color: $color-bg-light;
-        }
+@media(min-width: $bp-medium) {
+    .nav-item:hover .nav-item-icon { 
+        background-color: $color-bg-light;
     }
-    &:active .glyphicon {
+    .nav-item-active:hover .nav-item-icon { 
         background-color: $color-base;
-        color: #fff;
+        color: #ffffff;
     }
 }
 
-.nav-item-active .glyphicon {
+.nav-item:active .nav-item-icon.
+.nav-item-active .nav-item-icon {
     background-color: $color-base;
     color: #ffffff;
-    
-    &:hover {
-        background-color: $color-base;
-    }
 }
 
 .nav-arrow {
