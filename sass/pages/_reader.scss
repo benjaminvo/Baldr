@@ -87,6 +87,10 @@
         display: inline-block; // Læsevenner på linje
         margin-right: 20px;
     }
+    
+    li:last-child {
+        margin-right: 0;
+    }
 }
 
 .setting-font-size {
@@ -101,20 +105,15 @@
     font-size: 1.8em;
 }
 
-
 .collaborators img { // Læsevenner > billeder
     max-width: 100px;
     border-radius: 50%;
     border: 5px solid $color-primary;
 }
 
-.collaborator-off img { // class skal gives, når man toggler collaborators
-    border: 5px solid $color-secondary;
-}
-
-.reading-buddies {
-    margin: 5px 0 0 0;
-}
+//.reading-buddies {
+//    margin: 5px 0 0 0;
+//}
 
 .new-collaborator {
     margin: 0;
@@ -154,10 +153,6 @@ img.collaborator-on {
     visibility: hidden;
 }
 
-.search-input {
-    margin-bottom: 40px;
-}
-
 .results-text {
     display: none;
 }
@@ -166,8 +161,11 @@ img.collaborator-on {
     display: none;
 }
 
+.results-pensum h5 {
+    margin: 0;
+}
+
 .search-result-active {
-    font-family: $font-sans-serif-medium;
     background-color: lightgrey;
 }
 
