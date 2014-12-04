@@ -108,7 +108,7 @@
 .collaborators img { // Læsevenner > billeder
     max-width: 100px;
     border-radius: 50%;
-    border: 5px solid $color-primary;
+    border: 5px solid #fff;
 }
 
 //.reading-buddies {
@@ -183,6 +183,15 @@ img.collaborator-on {
         color: #000;
         text-decoration: none;
     }
+}
+
+figure img {
+    max-width: 80%;
+}
+
+figcaption {
+    padding-top: 20px;
+    font-size: 1.2em;
 }
 
 // Font-size toggle for large screens
@@ -329,7 +338,7 @@ img.collaborator-on {
 // Media query to position the dropdown and arrow accordingly to the header
 @media(max-width: $bp-medium) {
     .dropdown {
-        top: 54px;
+        top: 52px;
     }
     
     .nav-arrow {
