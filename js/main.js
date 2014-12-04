@@ -9,6 +9,38 @@ $(window).scroll(function() {
     }
 });
 
+// DROPDOWN - TABLE OF CONTENTS
+$(".nav-item_toc").click(function() {
+    
+    // Remove active class from other nav items
+    $('a.nav-item-active').not(this).removeClass("nav-item-active");
+
+    // Give body a dropdown-active class - remove if user clicks on already active dropdown
+    if ( !$(this).hasClass("nav-item-active") ) {
+        $("body").addClass("dropdown-active");
+    } else {
+        $("body").removeClass("dropdown-active");
+    }
+    
+    // Toggle active class for nav item
+    $(this).toggleClass("nav-item-active");
+    
+    // Untoggle search dropdown
+    $(".dropdown_search").hide();
+    $(".nav-arrow_search").hide();
+    
+    // Untoggle settings dropdown
+    $(".dropdown_settings").hide();
+    $(".nav-arrow_settings").hide();
+    
+    // Toggle dropdown and arrow
+    $(".dropdown_toc").toggle();
+    $(".nav-arrow_toc").toggle();
+    
+    // Keeps header big, when dropdown is open
+    $(".header").removeClass("header-inactive");
+    
+});
 
 // DROPDOWN - SETTINGS
 $(".nav-item_settings").click(function() {
@@ -30,13 +62,16 @@ $(".nav-item_settings").click(function() {
     $(".dropdown_search").hide();
     $(".nav-arrow_search").hide();
     
+    // Untoggle toc dropdown
+    $(".dropdown_toc").hide();
+    $(".nav-arrow_toc").hide();
+    
     // Toggle dropdown and arrow
     $(".dropdown_settings").toggle();
     $(".nav-arrow_settings").toggle();
     
     // Keeps header big, when dropdown is open
     $(".header").removeClass("header-inactive");
-    
 });
 
 // DROPDOWN - SEARCH
@@ -57,7 +92,11 @@ $('.nav-item_search').click(function() {
  
     // Untoggle settings dropdown
     $(".dropdown_settings").hide();
-    $(".nav-arrow_settings").hide();    
+    $(".nav-arrow_settings").hide();
+
+    // Untoggle toc dropdown
+    $(".dropdown_toc").hide();
+    $(".nav-arrow_toc").hide();
 
     // Toggle dropdown and arrow
     $(".dropdown_search").toggle();
@@ -65,7 +104,6 @@ $('.nav-item_search').click(function() {
     
     // Keeps header big, when dropdown is open
     $(".header").removeClass("header-inactive");
-    
 });
 
 // DROPDOWN - SETTINGS - BUTTONS
