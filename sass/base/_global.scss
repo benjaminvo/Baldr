@@ -63,10 +63,16 @@ p {
     text-indent: 40px;
 }
 
+a:focus {
+  text-decoration: none;
+}
+
 mark {
     padding-left: 0;
     padding-right: 0;
 }
+
+
 
 /*
 Hx > Lar. > Med. > Sma.
