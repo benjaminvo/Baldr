@@ -169,6 +169,10 @@ img.collaborator-on {
     background-color: lightgrey;
 }
 
+.search-result-text {
+    transition: background-color 0.5s ease-out;
+}
+
 .dropdown_search {
     p {
         color: #000;
