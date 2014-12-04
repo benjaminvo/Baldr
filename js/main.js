@@ -183,3 +183,16 @@ $(".toggle-notes").click(function() {
     $('.collaborator-notes').toggleClass("visible");
     $('.own-notes').toggleClass("not-visible");
 });
+
+$(".btn-search").click(function() {
+    $('.results-text').css('display', 'block');
+    $('.results-pensum').css('display', 'block');
+    $('#result-2').addClass('highlight-red');
+    $('#result-2').delay(5000).queue(function() {
+        $(this).removeClass('highlight-red');  
+    })
+});
+
+$('.result').click(function() {
+    $('.dropdown_search').toggle();
+});
