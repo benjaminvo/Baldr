@@ -27,6 +27,19 @@
     }
 }
 
+a:hover,
+a:visited,
+.nav-item:hover,
+.nav-item:visited,
+.nav-item-icon:hover,
+.nav-item-icon:visited,
+.nav-item-active:hover,
+.nav-item-active:visited,
+.nav-item-active:hover,
+.nav-item-active:visited {
+    text-decoration: none;
+}
+
 @media(min-width: $bp-medium) {
     
     // Keep header tall in top and when dropdown is active
@@ -123,4 +136,9 @@
 
 .chapter-current {
     margin-left: 10px;
+    
+    
+    &:visited {
+        text-decoration: none;
+    }
 }
