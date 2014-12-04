@@ -14,7 +14,7 @@
     transition: all .15s ease-in-out;
     
     a { 
-        color: $color-base; 
+        color: $color-base;
         
         &:hover {
             text-decoration: none;
@@ -25,19 +25,6 @@
     &:hover .reading-position-indicator {
         height: 5px;
     }
-}
-
-a:hover,
-a:visited,
-.nav-item:hover,
-.nav-item:visited,
-.nav-item-icon:hover,
-.nav-item-icon:visited,
-.nav-item-active:hover,
-.nav-item-active:visited,
-.nav-item-active:hover,
-.nav-item-active:visited {
-    text-decoration: none;
 }
 
 @media(min-width: $bp-medium) {
