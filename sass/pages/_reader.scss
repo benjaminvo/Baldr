@@ -137,12 +137,45 @@
     left: 0;
 }
 
+img.collaborator-on {
+    position: fixed;
+    display: none;
+    width: 100px;
+    top: 100px;
+    left: 100px;
+    z-index: 500;
+}
+
 .visible {
     visibility: visible;
 }
 
 .not-visible {
     visibility: hidden;
+}
+
+.search-input {
+    margin-bottom: 40px;
+}
+
+.results-text {
+    display: none;
+}
+
+.results-pensum {
+    display: none;
+}
+
+.dropdown_search {
+    p {
+        color: #000;
+        text-indent: inherit;
+    }
+    
+    a {
+        color: #000;
+        text-decoration: none;
+    }
 }
 
 // Font-size toggle for large screens
