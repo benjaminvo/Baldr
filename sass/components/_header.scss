@@ -13,7 +13,13 @@
     z-index: 100;
     transition: all .15s ease-in-out;
     
-    a { color: $color-base; }
+    a { 
+        color: $color-base; 
+        
+        &:hover {
+            text-decoration: none;
+        }
+    }
     
     // Transition height of reading indicator
     &:hover .reading-position-indicator {
@@ -23,7 +29,7 @@
 
 @media(min-width: $bp-medium) {
     
-    // Classes for keeping the header big, when the dropdown is active
+    // Keep header tall in top and when dropdown is active
     .header,
     .header:hover,
     .dropdown-active .header {
@@ -51,45 +57,56 @@
 .header-nav {
     display: block;
     margin: 7.5px -15px;
-    margin-right: 0px;
+    
     padding-left: 0;
-    float: right !important;
+    padding-right: 0;
+    
+    li {
+        float: left;
+        list-style-type: none;
+        position: relative;
+    }
 }
 
-.header-nav li {
-    margin-left: 10px;
-    float: left;
-    list-style-type: none;
-    position: relative;
+.header-nav_left {
+    float: left !important;
+    margin-left: 0;
+    
+    li { margin-right: 10px; }
+}
+
+.header-nav_right {
+    float: right !important;
+    margin-right: 0;
+    
+    li { margin-left: 10px; }
 }
 
 .nav-item {
     display: block;
-    padding: 10px 12px;
+        
     font-size: 1.7em;
     line-height: 1em;
-    border-radius: 50%;
+    
+    .glyphicon {
+        padding: 10px 12px;
+        border-radius: 50%;
+    }
 
     @media(min-width: $bp-medium) {
-        &:hover {
+        &:hover .glyphicon {
             background-color: $color-bg-light;
         }
     }
-    &:active {
+    &:active .glyphicon {
         background-color: $color-base;
-
-        span {
-            color: #fff;
-        }
+        color: #fff;
     }
 }
 
-.nav-item-active {
+.nav-item-active .glyphicon {
     background-color: $color-base;
-            
-    span {
-        color: #fff;
-    }
+    color: #ffffff;
     
     &:hover {
         background-color: $color-base;
@@ -108,3 +125,6 @@
     display: none;
 }
 
+.chapter-current {
+    margin-left: 10px;
+}

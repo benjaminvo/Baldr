@@ -24,20 +24,43 @@
         <!-- Header -->
         <header class="header" role="banner">
             
+            <!-- Reading indicator -->
             <div class="reading-position-wrapper">
                 <progress class="reading-position-indicator" value="0"></progress>
                 <span class="reading-time"></span>
             </div>
             
             <div class="container">
-                <a href="dashboard.html" class="header-logo">Baldr</a>
-                <ul class="header-nav">
+                
+                <!-- Left navigation -->                
+                <ul class="header-nav header-nav_left">
+                    <!-- Home -->
+                    <li>
+                        <a class="nav-item nav-item_home" href="javascript:void(0);">
+                            <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <!-- Table of Contents -->
+                    <li>
+                        <a class="nav-item nav-item_toc" href="javascript:void(0);">
+                            <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
+                            <span class="chapter-current">Chapter 1: Where do I start?</span>
+                        </a>
+                            
+                        <img class="nav-arrow nav-arrow_toc" src="img/triangle-cut.png" alt="">
+                    </li>
+                </ul>
+                
+                <!-- Right navigation --> 
+                <ul class="header-nav header-nav_right">
+                    <!-- Settings -->
                     <li>
                         <a class="nav-item nav-item_settings" href="javascript:void(0);">
                             <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
                         </a>
                         <img class="nav-arrow nav-arrow_settings" src="img/triangle-cut.png" alt="">
                     </li>
+                    <!-- Search -->
                     <li>
                         <a class="nav-item nav-item_search" href="javascript:void(0);">
                         <span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
