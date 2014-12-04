@@ -277,3 +277,20 @@ $('form').each(function() {
         }
     });
 });
+
+// TABLE OF CONTENTS
+
+// Update table of contents text on scroll
+$(document).scroll(function() {
+    var cutoff = $(window).scrollTop();
+    
+    $('.toc-element').each(function(){
+        if($(this).offset().top + $(this).height() > cutoff){
+            var headline = $(this).text();
+            
+            // Replace chapter title in header with visible headline
+            $('.chapter-current').text(headline);
+            return false; // stops the iteration after the first one on screen
+        }
+    });
+});
