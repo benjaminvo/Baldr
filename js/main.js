@@ -179,25 +179,36 @@ $(window).on('resize', function() {
     resetReadingValue();
 });
 
+// Toggles collaborator's notes on and off
 $(".toggle-notes").click(function() {
     $('.collaborator-notes').toggleClass("visible");
     $('.own-notes').toggleClass("not-visible");
+    $('.dropdown_settings').hide();
+    $(".nav-arrow_settings").hide();
+    $("body").removeClass("dropdown-active");
+    $('.nav-item').removeClass('nav-item-active');
 });
 
+// Clicking on search shows the search results
 $(".btn-search").click(function() {
     $('.results-text').css('display', 'block');
     $('.results-pensum').css('display', 'block');
-    $('#result-2').addClass('highlight-red');
-    $('#result-2').delay(5000).queue(function() {
-        $(this).removeClass('highlight-red');  
-    })
 });
 
+// Clicking a result from search list adds class search-result-active and hides dropdown and header becomes inactive
 $('.result').click(function() {
-    $('.dropdown_search').toggle();
+    $('#result-2').addClass('search-result-active');
+    $('#result-2').delay(2000).queue(function() {
+        $(this).removeClass('search-result-active');
+    })
+    $('.dropdown_search').hide();
+    $(".nav-arrow_search").hide();
+    $("body").removeClass("dropdown-active");
+    $('.nav-item').removeClass('nav-item-active');
 });
 
-// Smooth scroll to search result in text
+// Smooth scrolling
+// http://css-tricks.com/snippets/jquery/smooth-scrolling/
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
