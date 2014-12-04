@@ -53,8 +53,10 @@
     }    
 }
 
-// Transition height of reading indicator
-.header:hover .reading-position-indicator,
-.dropdown-active .reading-position-indicator{
-    height: 5px;
+@media(min-width: $bp-large) {
+    // Transition height of reading indicator
+    .header:hover .reading-position-indicator,
+    .dropdown-active .reading-position-indicator{
+        height: 5px;
+    }
 }
