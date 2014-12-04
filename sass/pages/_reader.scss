@@ -166,6 +166,11 @@ img.collaborator-on {
     display: none;
 }
 
+.search-result-active {
+    font-family: $font-sans-serif-medium;
+    background-color: lightgrey;
+}
+
 .dropdown_search {
     p {
         color: #000;
@@ -176,11 +181,6 @@ img.collaborator-on {
         color: #000;
         text-decoration: none;
     }
-}
-
-.search-result-active {
-    font-family: $font-sans-serif-medium;
-    background-color: lightgrey;
 }
 
 // Font-size toggle for large screens
