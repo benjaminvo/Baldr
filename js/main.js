@@ -231,13 +231,16 @@ $(".toggle-notes").click(function() {
 $(".btn-search").click(function() {
     $('.results-text').css('display', 'block');
     $('.results-pensum').css('display', 'block');
+    $('.form-control').val('experience');
+    // adds margin between search input and results after the search.
+    $('.search-results').css('margin-top', '40px')
 });
 
 // Clicking a result from search list adds class search-result-active and hides dropdown and header becomes inactive
 $('.result').click(function() {
     $('#result-2').addClass('search-result-active');
     $('#result-2').delay(2000).queue(function() {
-        $(this).removeClass('search-result-active');
+                $(this).removeClass('search-result-active'); 
     });
     $('.dropdown_search').hide();
     $(".nav-arrow_search").hide();
