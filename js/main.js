@@ -238,10 +238,11 @@ $(".btn-search").click(function() {
 
 // Clicking a result from search list adds class search-result-active and hides dropdown and header becomes inactive
 $('.result').click(function() {
-    $('#result-2').addClass('search-result-active');
-    $('#result-2').delay(2000).queue(function() {
-                $(this).removeClass('search-result-active'); 
+    $('.search-result-text').css('background-color', 'lightgrey');
+    $('.search-result-text').delay(2000).queue(function() {
+                $('.search-result-text').css('background-color', 'transparent'); 
     });
+    
     $('.dropdown_search').hide();
     $(".nav-arrow_search").hide();
     $("body").removeClass("dropdown-active");
