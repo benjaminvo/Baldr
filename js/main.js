@@ -265,3 +265,15 @@ $(function() {
     }
   });
 });
+
+// Let user submit search form by pressing enter
+$('form').each(function() {
+    $(this).find('input').keypress(function(e) {
+        // Enter pressed?
+        if(e.which == 10 || e.which == 13) {
+
+            $(".btn-search").trigger('click');
+            e.preventDefault();
+        }
+    });
+});
