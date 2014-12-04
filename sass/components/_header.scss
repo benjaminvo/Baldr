@@ -65,16 +65,24 @@
 
 .header-nav_left {
     float: left !important;
-    margin-left: 0;
+    margin-left: -5px;
     
-    li { margin-right: 10px; }
+    @media(min-width: $bp-small) {
+//        margin-left: 0;
+        
+        li { margin-right: 10px; }
+    }
 }
 
 .header-nav_right {
     float: right !important;
-    margin-right: 0;
+    margin-right: -5px;
     
-    li { margin-left: 10px; }
+    @media(min-width: $bp-small) {
+//        margin-right: 0;
+        
+        li { margin-left: 10px; }
+    }
 }
 
 .nav-item {
@@ -88,7 +96,14 @@
     }
     
     .nav-item-text {
-        margin-left: 10px;
+        margin-left: 5px;
+        font-size: 14px;
+        
+        @media(min-width: $bp-small) {
+            font-size: 16px;
+            margin-left: 10px;
+        }
+        
     }
 }
 
