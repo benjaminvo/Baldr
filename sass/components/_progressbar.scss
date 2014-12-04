@@ -2,6 +2,13 @@
     position: relative;
 }
 
+.reading-time {
+    position: absolute;
+    right: 15px;
+    bottom: -25px;
+    color: $color-base;
+}
+
 .reading-position-indicator {
     position: fixed;
     left: 0;
@@ -41,9 +48,8 @@
     }    
 }
 
-.reading-time {
-    position: absolute;
-    right: 15px;
-    bottom: -25px;
-    color: $color-base;
+// Transition height of reading indicator
+.header:hover .reading-position-indicator,
+.dropdown-active .reading-position-indicator{
+    height: 5px;
 }
