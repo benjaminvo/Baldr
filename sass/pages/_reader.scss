@@ -182,6 +182,20 @@ img.collaborator-on {
     transition: background-color 0.5s ease-out;
 }
 
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.result-wrapper {
+    margin-bottom: 15px;
+}
+
+.result {
+    font-family: $font-serif;
+    font-size: 1.4em;
+}
+
 .dropdown_search {
     p {
         color: #000;
@@ -194,12 +208,30 @@ img.collaborator-on {
     }
 }
 
-.search-results {
-    h5 {
+.result-location {
+    text-align: right;
+}
+
+@media(max-width: $bp-medium) {
+    .result-location {
+        text-align: left;
+    }
+}
+
+.search-results { 
+    h4 {
+        margin-bottom: 40px;
+    }
+    
+    span {
         margin: 0 0 10px 0;
         padding: 0;
         font-size: 1.4em;
         font-family: $font-sans-serif-medium;
+    }
+    
+    p {
+        
     }
 }
 
