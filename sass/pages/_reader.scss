@@ -6,13 +6,26 @@
     .dropdown-active .header {
         background-color: darken($color-base, 4%);
         
-        a {
+        .nav-item-icon,
+        .nav-item-text,
+        .nav-item-active:hover .nav-item-icon{
             color: #fff;
-            
-            &:hover {
-                background-color: $color-base;
-            }
         }
+                  
+        .nav-item:hover .nav-item-icon {
+            background-color: $color-base;
+        }
+        
+        .nav-item-active:hover .nav-item-icon { 
+            background-color: $color-primary;
+        }
+    }
+    
+    .nav-item-icon:after {
+        background-image: url('../img/nav-arrow_dark.png');
+    }
+    .reading-time {
+        color: #fff;
     }
     
     .dropdown {
