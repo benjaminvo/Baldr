@@ -1,0 +1,73 @@
+/*    OVERORDNET STYLING FOR HELE SEARCH    */
+
+// search-results er wrapper for alt indhold i dropdown_search
+.search-results {
+    display: none;
+    
+    h4 {
+        margin-bottom: 40px;
+    }
+    
+    span {
+        margin: 0 0 10px 0;
+        padding: 0;
+        font-size: 1.4em;
+        font-family: $font-sans-serif-medium;
+    }
+    
+    p {
+        color: #000;
+        text-indent: inherit;
+    }
+    
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+}
+
+/*    STYLING FOR RESULTATER I DENNE TEKST    */
+
+// Wrapper om hvert søgeresultat for teksten man læser i
+.search-result-current-wrapper {
+    margin-bottom: 15px;
+}
+
+//  search-result-sentence er sætningen til søgeresultatet i denne tekst
+.search-result-sentence {
+    font-family: $font-serif;
+    font-size: 1.4em;
+}
+
+// search-result-location beskriver hvor i teksten resulatet findes
+.search-result-location {
+    text-align: right;
+}
+
+@media(max-width: $bp-medium) {
+    .result-location {
+        text-align: left;
+    }
+}
+
+/*    STYLING FOR RESULTATER I PENSUM    */
+
+// search-results-pensum er wrapper for alting under søgeresultater for pensum
+.search-results-pensum {
+    display: none;
+}
+
+/*    jQUERY ELLER ANIMATION    */
+
+// search-result-text animere search-result-active
+.search-result-text {
+    transition: background-color 0.5s ease-out;
+}
+
+// search-results-pensum er wrapper for alting under søgeresultater for denne tekst
+.search-results-pensum {
+    img {
+        max-width: 100%;
+        box-shadow: 0 1px 4px 0 rgba(0,0,0,.15);
+    }
+}
