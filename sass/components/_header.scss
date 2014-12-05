@@ -107,7 +107,6 @@
     }
 }
 
-
 @media(min-width: $bp-medium) {    
     .nav-item:hover .nav-item-icon { 
         background-color: $color-bg-light;
@@ -124,14 +123,30 @@
     color: #ffffff;
 }
 
-.nav-arrow {
-    z-index: 1;
-    width: 30px;
-    margin-top: 17px;
+.nav-item-active .nav-item-icon:after {
+    background-image: url('../img/nav-arrow.png');
+    background-size: 30px 15px;
+    content: "";
+    
     position: absolute;
+
+    top: 43px;
     left: 0;
     right: 0;
+
+    width: 30px;
+    height: 15px;
+    z-index: 1;
+    
     margin-left: auto;
     margin-right: auto;
-    display: none;
+    
+    @media(min-width: $bp-medium) {
+        top: 53px;
+    }
+    transition: all .15s ease-in-out;
+}
+
+.nav-item-active:hover .nav-item-icon:after {
+    cursor: default;
 }
