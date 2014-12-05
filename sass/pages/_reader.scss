@@ -181,8 +181,21 @@ img.collaborator-on {
     }
 }
 
+.search-results {
+    h5 {
+        margin: 0 0 10px 0;
+        padding: 0;
+        font-size: 1.4em;
+        font-family: $font-sans-serif-medium;
+    }
+}
+
 figure img {
     max-width: 80%;
+}
+
+.figure {
+    text-align: center;
 }
 
 figcaption {
