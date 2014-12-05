@@ -229,20 +229,19 @@ $(".toggle-notes").click(function() {
 
 // Clicking on search shows the search results
 $(".btn-search").click(function() {
-    $('.results-text').css('display', 'block');
-    $('.results-pensum').css('display', 'block');
+    $('.search-results').css('display', 'block');
+    $('.search-results-pensum').css('display', 'block'); // burde kunne undlades, men virker dog ikke hvis man fjerne den?
     $('.form-control').val('experience');
     // adds margin between search input and results after the search.
     $('.search-results').css('margin-top', '40px')
 });
 
 // Clicking a result from search list adds class search-result-active and hides dropdown and header becomes inactive
-$('.result').click(function() {
+$('.search-result-sentence').click(function() {
     $('.search-result-text').css('background-color', 'lightgrey');
     $('.search-result-text').delay(2000).queue(function() {
                 $('.search-result-text').css('background-color', 'transparent'); 
     });
-    
     $('.dropdown_search').hide();
     $(".nav-arrow_search").hide();
     $("body").removeClass("dropdown-active");
