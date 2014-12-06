@@ -1,5 +1,6 @@
 /* PAGE: READER */
 
+// Dark mode
 .dark-mode {
     background-color: $color-base;
     color: #fff;
@@ -68,7 +69,7 @@
     }
     
     width: 100%;
-    max-height: 85%;
+    max-height: 100%;
 
     overflow-y: scroll;
     overflow-x: hidden;   
@@ -108,6 +109,8 @@
     }
 }
 
+/* Dropdown - Settings */
+
 .setting-font-size {
     font-family: $font-serif;
 }
@@ -125,10 +128,6 @@
     border-radius: 50%;
     border: 5px solid #fff;
 }
-
-//.reading-buddies {
-//    margin: 5px 0 0 0;
-//}
 
 .new-collaborator {
     margin: 0;
@@ -158,27 +157,6 @@ img.collaborator-on {
     top: 100px;
     left: 100px;
     z-index: 500;
-}
-
-.visible {
-    visibility: visible;
-}
-
-.not-visible {
-    visibility: hidden;
-}
-
-figure img {
-    max-width: 80%;
-}
-
-.figure {
-    text-align: center;
-}
-
-figcaption {
-    padding-top: 20px;
-    font-size: 1.2em;
 }
 
 // Font-size toggle for large screens
