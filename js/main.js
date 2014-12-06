@@ -232,8 +232,6 @@ $(".btn-search").click(function() {
     $('.search-results').css('display', 'block');
     $('.search-results-pensum').css('display', 'block'); // burde kunne undlades, men virker dog ikke hvis man fjerne den?
     $('.form-control').val('experience');
-    // adds margin between search input and results after the search.
-    $('.search-results').css('margin-top', '40px')
 });
 
 // Clicking a result from search list adds class search-result-active and hides dropdown and header becomes inactive
