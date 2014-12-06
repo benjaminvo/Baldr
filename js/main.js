@@ -1,7 +1,7 @@
-jQuery(function ($) {
-    // Customise the default plugin options with the third argument.
-    $('.main-content').annotator();
-});
+//jQuery(function ($) {
+//    // Customise the default plugin options with the third argument.
+//    $('.main-content').annotator();
+//});
 
 // HEADER
 $(window).scroll(function() {
