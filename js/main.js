@@ -247,6 +247,7 @@ $(".toggle-notes").click(function() {
     $(".nav-arrow_settings").hide();
     $("body").removeClass("dropdown-active");
     $('.nav-item').removeClass('nav-item-active');
+    $('.collaborators img').toggleClass("collaborator-on");
 });
 
 // Clicking on search shows the search results
