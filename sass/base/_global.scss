@@ -66,8 +66,19 @@ p {
     text-indent: 40px;
 }
 
+a {
+    color: $color-primary;
+    
+    &:hover {
+        color: $color-primary;
+    }
+    &:focus {
+        text-decoration: none;
+    }
+}
+
 a:focus {
-  text-decoration: none;
+  
 }
 
 mark {
