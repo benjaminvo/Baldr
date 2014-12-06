@@ -162,29 +162,49 @@
     }
 }
 
-// Dropdown - Table of Contents
+// DROPDOWN - Table of Contents
 
-//.toc-wrapper ul {
-//    margin: 0;
-//    padding: 0;
-//}
-
-.toc-wrapper a {
-    color: $color-base;
-    
-    &:hover {
-        text-decoration: none;
+// Chapters and sections
+.toc-wrapper  {
+    a,
+    a:hover {
         color: $color-primary;
     }
 }
 
-.toc li {
-    list-style-type: none;
+.toc {
+    margin-bottom: 30px;
+    padding-left: 0;
     
-    font-size: 18px;
+    @media(min-width: $bp-medium) {
+        padding-left: 30px;
+    }
+    
+    ul {
+        padding-left: 40px;
+    }
+    
+    li {
+        list-style-type: none;
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
+    ul li {
+        margin-bottom: 5px;
+    }
+    ul ul li {
+        font-size: 1.4em; // 3rd niveau
+        margin-bottom: 5px;
+    }
 }
 
-
+.chapter-title {
+    padding-top: 0;
+    margin-top: 0;
+}
+.chapter-reading-time {
+    color: #999999;
+}
 
 .book-details ul {
     margin: 0;
@@ -193,6 +213,7 @@
     li { list-style-type: none; }
 }
 
+// This book
 .book-cover-wrapper {
     padding-right: 0 !important;
     
