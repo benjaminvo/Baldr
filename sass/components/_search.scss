@@ -4,6 +4,7 @@
 // search-results er wrapper for alt indhold i dropdown_search
 .search-results {
     display: none;
+    margin-top: 40px;
     
     h4 {
         margin-bottom: 40px;
@@ -23,6 +24,12 @@
         list-style-type: none;
         margin: 0;
         padding: 0;
+    }
+}
+
+@media (max-width: $bp-small) {
+    .search-results {
+        margin-top: 15px;
     }
 }
 
@@ -69,7 +76,7 @@
 
 @media (max-width: $bp-small) {
     .search-results-pensum {
-        margin-top: 25px;
+        margin-top: 15px;
     }
 }
 
