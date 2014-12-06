@@ -50,6 +50,12 @@
 .search-result-sentence {
     font-family: $font-serif;
     font-size: 1.4em;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.search-result-sentence:last-child {
+    margin-bottom: 0;
 }
 
 // search-result-location beskriver hvor i teksten resulatet findes
@@ -61,9 +67,14 @@
     font-family: $font-sans-serif-medium;
 }
 
-@media(max-width: $bp-medium) {
+@media(max-width: $bp-small) {
     .search-result-location {
         text-align: left;
+    }
+    
+    .search-result-sentence {
+        padding-left: 30px;
+        display: inline-block;
     }
 }
 
