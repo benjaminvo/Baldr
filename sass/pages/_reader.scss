@@ -152,42 +152,6 @@
     left: 0;
 }
 
-.highlighter-container {
-    margin-top: 40px;
-    margin-left: -50px;
-}
-
-.highlighter-container:after {
-    background-image: url('../img/tooltip-arrow.png');
-    background-size: 30px 15px;
-    width: 30px;
-    height: 15px;
-    content: "";
-    position: absolute;
-    top: -14px;
-    left: 18px;
-    z-index: 200;
-}
-
-.color-circle {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    border-radius: 50%;
-    height: 20px;
-    width: 20px;
-    margin: 10px;
-    
-    &:hover {
-        transition: 0.2s all ease;
-        -webkit-transform: scale(1.5, 1.5);
-    }
-}
-
-.highlight-none-tooltip {
-    border: 1px solid $color-dark-grey;
-}
-
 .collaborator-on {
     border: 5px solid $color-primary !important;
 }
@@ -195,5 +159,45 @@
 @media(max-width: $bp-small) {
     .setting-collaborators {
         margin-top: 40px;
+    }
+}
+
+// Dropdown - Table of Contents
+
+//.toc-wrapper ul {
+//    margin: 0;
+//    padding: 0;
+//}
+
+.toc-wrapper a {
+    color: $color-base;
+    
+    &:hover {
+        text-decoration: none;
+        color: $color-primary;
+    }
+}
+
+.toc li {
+    list-style-type: none;
+    
+    font-size: 18px;
+}
+
+
+
+.book-details ul {
+    margin: 0;
+    padding: 0;
+    
+    li { list-style-type: none; }
+}
+
+.book-cover-wrapper {
+    padding-right: 0 !important;
+    
+    .book-cover {
+        width: 100%;
+        box-shadow: 0 1px 4px 0 rgba(0,0,0,.15);
     }
 }
