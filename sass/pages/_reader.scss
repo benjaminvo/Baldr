@@ -152,13 +152,8 @@
     left: 0;
 }
 
-img.collaborator-on {
-    position: fixed;
-    display: none;
-    width: 100px;
-    top: 100px;
-    left: 100px;
-    z-index: 500;
+.collaborator-on {
+    border: 5px solid $color-primary !important;
 }
 
 @media(max-width: $bp-small) {
