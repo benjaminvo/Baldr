@@ -1,3 +1,4 @@
+/* SEARCH */
 /*    OVERORDNET STYLING FOR HELE SEARCH    */
 
 // search-results er wrapper for alt indhold i dropdown_search
@@ -6,13 +7,6 @@
     
     h4 {
         margin-bottom: 40px;
-    }
-    
-    span {
-        margin: 0 0 10px 0;
-        padding: 0;
-        font-size: 1.4em;
-        font-family: $font-sans-serif-medium;
     }
     
     p {
@@ -24,6 +18,17 @@
         color: #000;
         text-decoration: none;
     }
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.row .row .row div[class^="col-"] {
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 /*    STYLING FOR RESULTATER I DENNE TEKST    */
@@ -42,10 +47,14 @@
 // search-result-location beskriver hvor i teksten resulatet findes
 .search-result-location {
     text-align: right;
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 1.4em;
+    font-family: $font-sans-serif-medium;
 }
 
 @media(max-width: $bp-medium) {
-    .result-location {
+    .search-result-location {
         text-align: left;
     }
 }
@@ -55,6 +64,21 @@
 // search-results-pensum er wrapper for alting under søgeresultater for pensum
 .search-results-pensum {
     display: none;
+}
+
+.search-pensum-title {
+    font-size: 1.8em;
+}
+
+.search-pensum-author {
+    font-size: 1.4em;
+}
+
+.search-pensum-results {
+    display: inline-block; // inline-block er nødvendigt på et element i en li, for at kunne bruge margin
+    font-size: 1.2em;
+    color: $color-dark-grey;
+    margin: 15px 0;
 }
 
 /*    jQUERY ELLER ANIMATION    */
