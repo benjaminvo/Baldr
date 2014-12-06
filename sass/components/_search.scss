@@ -26,10 +26,11 @@
     }
 }
 
-.row .row .row div[class^="col-"] {
-    padding-left: 30px;
-    padding-right: 30px;
-}
+// Rammer alle colonner i row*3
+    .row .row .row div[class^="col-"] {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 
 /*    STYLING FOR RESULTATER I DENNE TEKST    */
 
@@ -48,7 +49,7 @@
 .search-result-location {
     text-align: right;
     margin: 0 0 10px 0;
-    padding: 0;
+    padding-right: 0 !important; // !important for at overrule padding fra .row .row .row div[class^="col-"]
     font-size: 1.4em;
     font-family: $font-sans-serif-medium;
 }
@@ -66,6 +67,12 @@
     display: none;
 }
 
+@media (max-width: $bp-small) {
+    .search-results-pensum {
+        margin-top: 25px;
+    }
+}
+
 .search-pensum-title {
     font-size: 1.8em;
 }
@@ -79,6 +86,10 @@
     font-size: 1.2em;
     color: $color-dark-grey;
     margin: 15px 0;
+}
+
+.search-result-pensum-wrapper {
+    margin-bottom: 20px;
 }
 
 /*    jQUERY ELLER ANIMATION    */
