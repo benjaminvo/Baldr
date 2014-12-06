@@ -57,13 +57,19 @@
     }
 }
 
+// Dropdowns
+
 .dropdown {
     display: none;
     position: fixed;
     top: 72px;
-    
     padding: 20px 0;
     
+    // Position dropdown according to the header on small screens
+    @media(max-width: $bp-medium) {
+        top: 52px;
+    }    
+
     @media(min-width: $bp-small) {
         padding: 40px 0;
     }
@@ -79,6 +85,12 @@
     transition: all 0.15s ease-in-out;
     
     z-index: 50;
+}
+// Media query to position the dropdown and arrow accordingly to the header
+@media(max-width: $bp-medium) {
+    .dropdown {
+        top: 52px;
+    }
 }
 
 .dropdown h4 {
@@ -109,7 +121,7 @@
     }
 }
 
-/* Dropdown - Settings */
+// Dropdown - Settings
 
 .setting-font-size {
     font-family: $font-serif;
@@ -157,17 +169,6 @@ img.collaborator-on {
     top: 100px;
     left: 100px;
     z-index: 500;
-}
-
-// Media query to position the dropdown and arrow accordingly to the header
-@media(max-width: $bp-medium) {
-    .dropdown {
-        top: 52px;
-    }
-    
-    .nav-arrow {
-        margin-top: 7px;
-    }
 }
 
 @media(max-width: $bp-small) {
