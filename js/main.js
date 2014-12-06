@@ -25,11 +25,15 @@ $(".nav-item_toc").click(function() {
     // Remove active class from other nav items
     $('a.nav-item-active').not(this).removeClass("nav-item-active");
 
-    // Give body a dropdown-active class - remove if user clicks on already active dropdown
+    // Give body classes
     if ( !$(this).hasClass("nav-item-active") ) {
+        // Active dropdown class
         $("body").addClass("dropdown-active");
+        // Overflow hidden class, so body does not scroll
+        $("body").addClass("overflow-hidden");
     } else {
         $("body").removeClass("dropdown-active");
+        $("body").removeClass("overflow-hidden");
     }
     
     // Toggle active class for nav item
@@ -58,11 +62,15 @@ $(".nav-item_settings").click(function() {
     // Remove active class from other nav items
     $('a.nav-item-active').not(this).removeClass("nav-item-active");
 
-    // Give body a dropdown-active class - remove if user clicks on already active dropdown
+    // Give body classes
     if ( !$(this).hasClass("nav-item-active") ) {
+        // Active dropdown class
         $("body").addClass("dropdown-active");
+        // Overflow hidden class, so body does not scroll
+        $("body").addClass("overflow-hidden");
     } else {
         $("body").removeClass("dropdown-active");
+        $("body").removeClass("overflow-hidden");
     }
     
     // Toggle active class for nav item
@@ -90,11 +98,15 @@ $('.nav-item_search').click(function() {
     // Remove active class from other nav items
     $('a.nav-item-active').not(this).removeClass('nav-item-active');
     
-    // Give body a dropdown-active class - remove if user clicks on already active dropdown
+    // Give body classes
     if ( !$(this).hasClass("nav-item-active") ) {
+        // Active dropdown class
         $("body").addClass("dropdown-active");
+        // Overflow hidden class, so body does not scroll
+        $("body").addClass("overflow-hidden");
     } else {
         $("body").removeClass("dropdown-active");
+        $("body").removeClass("overflow-hidden");
     }
 
     // Toggle active class for nav item
