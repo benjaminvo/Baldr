@@ -64,7 +64,7 @@
     margin: 0 0 10px 0;
     padding-right: 0 !important; // !important for at overrule padding fra .row .row .row div[class^="col-"]
     font-size: 1.4em;
-    font-family: $font-sans-serif-medium;
+    font-family: $font-sans-serif-bold;
 }
 
 @media(max-width: $bp-small) {
@@ -108,6 +108,14 @@
 
 .search-result-pensum-wrapper {
     margin-bottom: 20px;
+}
+
+.search-result-pensum-cover {
+    padding-right: 0 !important;
+}
+
+.search-result-pensum-data {
+    padding-left: 0 !important;
 }
 
 /*    jQUERY ELLER ANIMATION    */
