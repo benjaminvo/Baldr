@@ -9,6 +9,16 @@ $(window).scroll(function() {
     }
 });
 
+// DROPDOWN - Add overflow hidden class to body, when mouse is inside a dropdown
+$('.dropdown')
+    .mouseenter(function() {
+        $("body").addClass("overflow-hidden");
+    })
+    .mouseleave(function() {
+        $("body").removeClass("overflow-hidden");
+    }
+);
+
 // DROPDOWN - TABLE OF CONTENTS
 $(".nav-item_toc").click(function() {
     
