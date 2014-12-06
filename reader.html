@@ -11,6 +11,8 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <!-- Project styles -->
         <link rel="stylesheet" href="css/main.css">
+        
+        <link rel="stylesheet" href="css/annotator/annotator.min.css">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -227,25 +229,50 @@
                     <div class="col-sm-8 toc-wrapper">
                         <h4>Indholdsfortegnelse</h4> 
                         
+                        <h5><a href="#">Chapter 1: Where do I start</a></h5>
+                        
                         <ul class="toc">
-                            <li>Chapter 1: Where do I start?</li>
-                            <li>Where do I start?</li>
-                            <li>What Does a Web Designer Do?</li>
-                            <li>DESIGN</li>
-                            <li>User Experience, Interaction, and User Interface design</li>
-                            <li>User research and testing reports</li>
-                            <li>Wireframe diagrams</li>
-                            <li>Site diagram</li>
-                            <li>Storyboards and user flow charts</li>
-                            <li>Visual (graphic) design</li>
-                            <li>DEVELOPMENT</li>
-                            <li>Authoring/markup</li>
-                            <li>Styling</li>
+                            <li><a href="#">Where do I start?</a></li>
+                            <li><a href="#">What Does a Web Designer Do?</a></li>
+                            
+                            <ul>
+                                <li><a href="#">Design</a></li>
+                                
+                                <ul>
+                                    <li><a href="#">User Experience, Interaction, and User Interface design</a></li>
+                                    <li><a href="#">User research and testing reports</a></li>
+                                    <li><a href="#">Wireframe diagrams</a></li>
+                                    <li><a href="#">Site diagram</a></li>
+                                    <li><a href="#">Storyboards and user flow charts</a></li>
+                                    <li><a href="#">Visual (graphic) design</a></li>
+                                </ul>
+                                
+                                <li><a href="#">Developement</a></li>
+                                
+                                <ul>
+                                    <li><a href="#">Authoring/markup</a></li>
+                                    <li><a href="#">Styling</a></li>
+                                </ul>
+                            </ul>
                         </ul>
                     </div>
                     
                     <div class="col-sm-4">
                         <h4>Denne bog</h4>
+                        
+                        <div class="row">
+                            <div class="col-xs-4 book-cover-wrapper">
+                                <img class="book-cover" src="img/book_learning-web-design.jpg" alt="">
+                            </div>
+                            <div class="col-xs-8 book-details"> 
+                                <ul>
+                                    <li><span class="search-pensum-title">Learning Web Design<span></li>
+                                    <li><span class="search-pensum-author">af Jennifer N. Robbins</span></li>
+                                    <li><span class="search-pensum-results">Publisher: O'Reilly Media <br>4th edition, 2012 <br>Pages: 624</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div> <!-- /Row -->
             </div> <!-- Container end -->
@@ -502,7 +529,8 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
         <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="js/jQuery.highlighter.js"></script>
+        <script src="js/vendor/annotator-full.min.js"></script>
+<!--        <script src="js/jQuery.highlighter.js"></script>-->
         <script src="js/main.js"></script>
 
     </body>
