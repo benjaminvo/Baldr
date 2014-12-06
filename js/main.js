@@ -1,3 +1,8 @@
+//jQuery(function ($) {
+//    // Customise the default plugin options with the third argument.
+//    $('.main-content').annotator();
+//});
+
 // HEADER
 $(window).scroll(function() {
     if ($(this).scrollTop() > 20) {  
