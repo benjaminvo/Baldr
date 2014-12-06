@@ -62,16 +62,12 @@
 .dropdown {
     display: none;
     position: fixed;
-    top: 72px;
-    padding: 20px 0;
+    top: 0; // Var 72px på desktop
     
-    // Position dropdown according to the header on small screens
-    @media(max-width: $bp-medium) {
-        top: 52px;
-    }    
-
-    @media(min-width: $bp-small) {
-        padding: 40px 0;
+    padding: 72px 0 20px; // Top: Header heigh 52px + 20px padding-top
+    
+    @media(min-width: $bp-medium) {
+        padding: 112px 0 40px; // Top: Header height 72px + 40px padding-top
     }
     
     width: 100%;
@@ -85,12 +81,6 @@
     transition: all 0.15s ease-in-out;
     
     z-index: 50;
-}
-// Media query to position the dropdown and arrow accordingly to the header
-@media(max-width: $bp-medium) {
-    .dropdown {
-        top: 52px;
-    }
 }
 
 .dropdown h4 {
