@@ -326,7 +326,13 @@ $('.search-result-sentence').click(function() {
     $('.search-result-text').css('color', '#58b957');
     $('.search-result-text').css('background-color', '#f6f6f6');
     $('.search-result-text').delay(2000).queue(function() {
+        
+        if ( $('body').hasClass('dark-mode') ) {
+                $('.search-result-text').css('color', '#fff'); 
+        } else {
                 $('.search-result-text').css('color', '#000'); 
+            }
+        
                 $('.search-result-text').css('background-color', 'transparent');
     });
     $('.dropdown_search').hide();
@@ -337,20 +343,20 @@ $('.search-result-sentence').click(function() {
 
 // Smooth scrolling
 // http://css-tricks.com/snippets/jquery/smooth-scrolling/
-//$(function() {
-//  $('a[href*=#]:not([href=#])').click(function() {
-//    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-//      var target = $(this.hash);
-//      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-//      if (target.length) {
-//        $('html,body').animate({
-//          scrollTop: target.offset().top - 200
-//        }, 500);
-//        return false;
-//      }
-//    }
-//  });
-//});
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('.main-content').animate({
+          scrollTop: target.offset().top - 200
+        }, 500);
+        return false;
+      }
+    }
+  });
+});
 
 // Let user submit search form by pressing enter
 $('form').each(function() {
