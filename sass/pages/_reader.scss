@@ -51,6 +51,14 @@
     .search-results a {
         color: #fff;
     }
+    
+    .collaborator-main-content span {
+        color: #fff;
+    }
+    
+    .new-collaborator {
+        border: 4px dashed #fff;
+    }
 }
 
 // Dropdowns
@@ -209,7 +217,11 @@
     }
 }
 
-@media(min-width: $bp-small) {
+.header-inactive .collaborator-main-content {
+    top: 20px;
+}
+
+@media(max-width: $bp-small) {
     .setting-collaborators {
         margin-top: 40px;
     }
