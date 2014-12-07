@@ -37,13 +37,17 @@ $('.nav-item_dashboard').click(function() {
     // Remove active class from other nav items
     $('a.nav-item-active').not(this).removeClass('nav-item-active');
     
-    // Give body classes
+    // Disable/Enable tooltip and give body classes
     if ( !$(this).hasClass("nav-item-active") ) {
+        // Disable tooltip
+        $(this).tooltip('disable');
+        
         // Active dropdown class
         $("body").addClass("dropdown-active");
         // Overflow hidden class, so body does not scroll
         $("body").addClass("overflow-hidden");
     } else {
+        $(this).tooltip('enable');
         $("body").removeClass("dropdown-active");
         $("body").removeClass("overflow-hidden");
     }
@@ -69,13 +73,17 @@ $(".nav-item_toc").click(function() {
     // Remove active class from other nav items
     $('a.nav-item-active').not(this).removeClass("nav-item-active");
 
-    // Give body classes
+    // Disable/Enable tooltip and give body classes
     if ( !$(this).hasClass("nav-item-active") ) {
+        // Disable tooltip
+        $(this).tooltip('disable');
+        
         // Active dropdown class
         $("body").addClass("dropdown-active");
         // Overflow hidden class, so body does not scroll
         $("body").addClass("overflow-hidden");
     } else {
+        $(this).tooltip('enable');
         $("body").removeClass("dropdown-active");
         $("body").removeClass("overflow-hidden");
     }
@@ -103,13 +111,17 @@ $(".nav-item_settings").click(function() {
     // Remove active class from other nav items
     $('a.nav-item-active').not(this).removeClass("nav-item-active");
 
-    // Give body classes
+    // Disable/Enable tooltip and give body classes
     if ( !$(this).hasClass("nav-item-active") ) {
+        // Disable tooltip
+        $(this).tooltip('disable');
+        
         // Active dropdown class
         $("body").addClass("dropdown-active");
         // Overflow hidden class, so body does not scroll
         $("body").addClass("overflow-hidden");
     } else {
+        $(this).tooltip('enable');
         $("body").removeClass("dropdown-active");
         $("body").removeClass("overflow-hidden");
     }
@@ -136,13 +148,17 @@ $('.nav-item_search').click(function() {
     // Remove active class from other nav items
     $('a.nav-item-active').not(this).removeClass('nav-item-active');
     
-    // Give body classes
+    // Disable/Enable tooltip and give body classes
     if ( !$(this).hasClass("nav-item-active") ) {
+        // Disable tooltip
+        $(this).tooltip('disable');
+        
         // Active dropdown class
         $("body").addClass("dropdown-active");
         // Overflow hidden class, so body does not scroll
         $("body").addClass("overflow-hidden");
     } else {
+        $(this).tooltip('enable');
         $("body").removeClass("dropdown-active");
         $("body").removeClass("overflow-hidden");
     }
