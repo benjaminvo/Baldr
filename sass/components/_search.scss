@@ -52,6 +52,10 @@
     font-size: 1.4em;
     display: block;
     margin-bottom: 8px;
+    
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .search-result-sentence:last-child {
@@ -122,7 +126,7 @@
 
 // search-result-text animere search-result-active
 .search-result-text {
-    transition: background-color 0.5s ease-out;
+    transition: all 0.5s ease-out;
 }
 
 // search-results-pensum er wrapper for alting under søgeresultater for denne tekst
