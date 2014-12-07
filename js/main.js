@@ -303,6 +303,13 @@ $('form').each(function() {
     });
 });
 
+// Hide search results if search input is empty
+$('.form-control').keyup(function() {
+    if( $(this).val().length === 0 ) {
+        $(".search-results").hide();
+    }
+});
+
 // TABLE OF CONTENTS
 
 // Update table of contents text on scroll
