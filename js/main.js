@@ -6,11 +6,11 @@
 // HEADER
 $(window).scroll(function() {
     if ($(this).scrollTop() > 20) {  
-        $(".header").addClass("header-inactive");
+        $("body").addClass("header-inactive");
         //$("body").removeClass("dropdown-active"); // Remove dropdown class  
     }
     else {
-        $(".header").removeClass("header-inactive");
+        $("body").removeClass("header-inactive");
     }
 });
 
@@ -63,7 +63,7 @@ $(".nav-item_toc").click(function() {
     $(".nav-arrow_toc").toggle();
     
     // Keeps header big, when dropdown is open
-    $(".header").removeClass("header-inactive");
+    $("body").removeClass("header-inactive");
     
 });
 
@@ -100,7 +100,7 @@ $(".nav-item_settings").click(function() {
     $(".nav-arrow_settings").toggle();
     
     // Keeps header big, when dropdown is open
-    $(".header").removeClass("header-inactive");
+    $("body").removeClass("header-inactive");
 });
 
 // DROPDOWN - SEARCH
@@ -136,7 +136,7 @@ $('.nav-item_search').click(function() {
     $(".nav-arrow_search").toggle();
     
     // Keeps header big, when dropdown is open
-    $(".header").removeClass("header-inactive");
+    $("body").removeClass("header-inactive");
     
     // Blur search input field
     $(".form-control").focus();
