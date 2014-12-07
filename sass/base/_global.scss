@@ -69,7 +69,10 @@ p {
 a {
     color: $color-primary;
     
-    &:hover {
+    &:hover,
+    &:visited,
+    &:active,
+    &:focus {
         color: $color-primary;
     }
     &:focus {
