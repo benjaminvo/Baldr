@@ -1,5 +1,36 @@
 /* PAGE: DASHBOARD */
 
-.dashboard {
-    background-color: $color-bg-light;
+.dropdown_dashboard {
+    h4 {
+        text-align: center;
+        padding-bottom: 20px;
+        position: relative;
+    }
+    
+    h5 {
+        margin: 15px 0;
+        padding: 0 15px;
+    }
+    
+    h4:after {
+        position: absolute;
+        content: "";
+        border-bottom: 3px solid $color-primary;
+        bottom: 0;
+        left: calc(50% - 75px);
+        width: 150px;
+    }
+    
+    img {
+        max-width: 80%;
+        box-shadow: 0 1px 4px 0 rgba(0,0,0,.25);
+    }
+    
+    img.profile-image {
+        display: block;
+        margin: 0 auto;
+        border-radius: 50%;
+        border: 4px solid #fff;
+        margin-bottom: 20px;
+    }
 }
