@@ -1,5 +1,8 @@
 // TOOLTIPS
 // Enable tooltips on nav items
+$('.toc-chapter a').tooltip();
+$('.chapter-title').tooltip();
+
 $('.nav-item').tooltip(
     { delay: {"show": 800, "hide": 100} }
 );
@@ -106,7 +109,7 @@ $(".nav-item_toc").click(function() {
 });
 
 // Toggle dropdown, when user clicks on link in table of contents
-$('.toc-chapter a').click(function() {
+$('.toc-active-link').click(function() {
     $('.nav-item_toc').trigger( "click" );
 });
 
