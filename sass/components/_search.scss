@@ -130,6 +130,11 @@
 
 /*    jQUERY ELLER ANIMATION    */
 
+.search-result-text_active {
+    background-color: blue;
+    color: $color-primary;
+}
+
 // search-results-pensum er wrapper for alting under søgeresultater for denne tekst
 .search-result-pensum-cover img {
         max-width: 100%;
