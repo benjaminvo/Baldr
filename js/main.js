@@ -1,3 +1,9 @@
+// TOOLTIPS
+// Enable tooltips on nav items
+$('.nav-item').tooltip(
+    { delay: {"show": 800, "hide": 100} }
+);
+
 // HEADER
 $(window).scroll(function() {
     if ($(this).scrollTop() > 20) {  
