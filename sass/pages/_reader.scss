@@ -57,7 +57,11 @@
     }
     
     .new-collaborator {
-        border: 4px dashed #fff;
+        border: 3px solid #fff;
+    }
+    
+    .add-collaborator {
+        color: #fff;
     }
 }
 
@@ -82,7 +86,7 @@
     
     background-color: $color-light-grey;
     box-shadow: 0 1px 4px 0 rgba(0,0,0,.15);
-    transition: all 0.15s ease-in-out;
+//    transition: all 0.15s ease-in-out;
     
     z-index: 50;
 }
@@ -137,6 +141,7 @@
                 0 0 0 4px #ffffff;
     
     &:hover {
+        transition: box-shadow 0.25s ease;
         box-shadow: 0 0 0 2px $color-light-grey,
                     0 0 0 4px $color-primary;
     }
@@ -161,9 +166,33 @@ img.collaborator-on {
     text-align: center;
     vertical-align: middle;
     border-radius: 100%;
-    border: 4px dashed $color-dark-grey;
+    border: 3px solid #fff;
     display: inline-block;
-    padding-top: 20px;
+    padding-top: 18px;
+    
+    &:hover {
+        transition: border 0.25s ease;
+        text-decoration: none;
+        border: 3px solid $color-primary;
+    }
+}
+
+.new-collaborator .glyphicon {
+    color: $color-base;
+    font-size: 3em;
+    overflow: hidden;
+}
+
+.new-collaborator:hover .glyphicon {
+    transition: color 0.25s ease;
+    color: $color-primary;
+}
+
+.add-collaborator {
+    display: block;
+    color: $color-base;
+    font-size: 1.4em;
+    text-decoration: none;
 }
 
 .collaborator-notes {
