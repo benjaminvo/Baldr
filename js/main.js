@@ -131,6 +131,9 @@ $('.nav-item_search').click(function() {
     
     // Keeps header big, when dropdown is open
     $(".header").removeClass("header-inactive");
+    
+    // Blur search input field
+    $(".form-control").focus();
 });
 
 // DROPDOWN - SETTINGS - BUTTONS
