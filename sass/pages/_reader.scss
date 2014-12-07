@@ -43,11 +43,7 @@
     footer {
         color: #fff;
     }
-    
-    .new-collaborator {
-        border: 2px dashed #fff;
-    }
-    
+        
     .highlight-none {
         background-color: $color-base; 
     }
@@ -128,7 +124,7 @@
 .collaborators img { // Læsevenner > billeder
     max-width: 100px;
     border-radius: 50%;
-    border: 5px solid #fff;
+    border: 4px solid #fff;
 }
 
 .new-collaborator {
@@ -139,7 +135,7 @@
     text-align: center;
     vertical-align: middle;
     border-radius: 100%;
-    border: 2px dashed #000;
+    border: 4px dashed $color-dark-grey;
     display: inline-block;
     padding-top: 20px;
 }
@@ -153,10 +149,67 @@
 }
 
 .collaborator-on {
-    border: 5px solid $color-primary !important;
+    border: 4px solid $color-primary !important;
 }
 
-@media(max-width: $bp-small) {
+.collaborator-main-content {
+        a,
+        a:hover,
+        a:focus,
+        a:visited {
+            text-decoration: none;
+            color: $color-base;
+        }
+    
+    
+        visibility: hidden;
+        position: fixed;
+        top: 90px;
+        right: 20px;
+    
+    img {
+        border-radius: 50%;
+        max-height: 50px;
+//        border: 4px solid $color-primary;
+        box-shadow: 0 0 0 2px white,
+        0 0 0 5px $color-primary;
+    }
+    
+    &:hover img {
+            box-shadow: 0 0 0 2px white,
+            0 0 0 5px #e43b3b;
+    }
+//    #9EE9A2
+//    #FF8CB7
+    
+    span {
+        font-size: 1em;
+        text-transform: uppercase;
+        margin-right: 10px;
+    }
+}
+
+@media(max-width: $bp-large) {
+    .collaborator-main-content {
+        width: 100%;
+        text-align: center;
+        top: auto;
+        bottom: 0;
+        background-color: rgba(255, 255, 255, 0.85);
+        right: 0;
+        padding: 10px 0;
+        
+        span {
+            margin-bottom: 10px;
+        }
+        
+        img {
+            max-height: 35px;
+        }
+    }
+}
+
+@media(min-width: $bp-small) {
     .setting-collaborators {
         margin-top: 40px;
     }
