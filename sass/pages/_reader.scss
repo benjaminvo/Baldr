@@ -268,8 +268,16 @@ ul.toc-chapter {
         color: $color-base;
     }
 }
+
 .chapter-reading-time {
-    color: #999999;
+    display: none;
+    
+    @media(min-width: $bp-small) {
+        display: inline;
+        
+        float: right !important;
+        color: #999999;
+    }
 }
 
 .book-details ul {
