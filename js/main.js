@@ -264,6 +264,7 @@ $(window).on('resize', function() {
 // Toggles collaborator's notes on and off
 $(".toggle-notes").click(function() {
     $('.collaborator-notes').toggleClass("visible");
+    $('.collaborator-main-content').toggleClass("visible");
     $('.own-notes').toggleClass("not-visible");
     $('.dropdown_settings').hide();
     $(".nav-arrow_settings").hide();
