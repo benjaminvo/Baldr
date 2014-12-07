@@ -326,7 +326,13 @@ $('.search-result-sentence').click(function() {
     $('.search-result-text').css('color', '#58b957');
     $('.search-result-text').css('background-color', '#f6f6f6');
     $('.search-result-text').delay(2000).queue(function() {
+        
+        if ( $('body').hasClass('dark-mode') ) {
+                $('.search-result-text').css('color', '#fff'); 
+        } else {
                 $('.search-result-text').css('color', '#000'); 
+            }
+        
                 $('.search-result-text').css('background-color', 'transparent');
     });
     $('.dropdown_search').hide();
