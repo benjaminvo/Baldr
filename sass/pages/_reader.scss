@@ -169,7 +169,6 @@
             color: $color-base;
         }
     
-    
         visibility: hidden;
         position: fixed;
         top: 90px;
@@ -197,6 +196,11 @@
     }
 }
 
+.header-inactive .collaborator-main-content {
+    -webkit-transition: top 0.25s ease;
+    top: 70px;
+}
+
 @media(max-width: $bp-large) {
     .collaborator-main-content {
         width: 100%;
@@ -215,10 +219,6 @@
             max-height: 35px;
         }
     }
-}
-
-.header-inactive .collaborator-main-content {
-    top: 20px;
 }
 
 @media(max-width: $bp-small) {
