@@ -103,7 +103,13 @@ $(".nav-item_toc").click(function() {
     
     // Keeps header big, when dropdown is open
     $("body").removeClass("header-inactive");
-    
+});
+
+// Toggle dropdown, when user clicks on link in table of contents
+$('.toc-chapter a').click(function() {
+    $('.dropdown_toc').hide();
+    $("body").removeClass("dropdown-active");
+    $('.nav-item').removeClass('nav-item-active');
 });
 
 // DROPDOWN - SETTINGS
@@ -389,7 +395,7 @@ $(document).scroll(function() {
     {
 
       var target = $(this.hash),
-      headerHeight = $(".header-content").height() + 80; // Get fixed header height
+      headerHeight = $(".header-content").height() + 30; // Get fixed header height
 
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 
