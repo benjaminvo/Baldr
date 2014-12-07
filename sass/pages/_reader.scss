@@ -64,7 +64,7 @@
     position: fixed;
     top: 0; // Var 72px på desktop
     
-    padding: 72px 0 20px; // Top: Header heigh 52px + 20px padding-top
+    padding: 82px 0 30px; // Top: Header heigh 52px + 30px padding-top
     
     @media(min-width: $bp-medium) {
         padding: 112px 0 40px; // Top: Header height 72px + 40px padding-top
@@ -166,41 +166,54 @@
 
 // Chapters and sections
 .toc-wrapper  {
-    a,
-    a:hover {
-        color: $color-primary;
+    margin-bottom: 30px;
+    
+    @media(min-width: $bp-small) {
+            margin-bottom: 0;
     }
 }
 
-.toc {
-    margin-bottom: 30px;
+ul.toc-chapter {
+    margin-bottom: 0;
     padding-left: 0;
     
     @media(min-width: $bp-medium) {
-        padding-left: 30px;
-    }
-    
-    ul {
-        padding-left: 40px;
+        padding-left: 15px;
     }
     
     li {
         list-style-type: none;
         font-size: 1.8em;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
+        
+        &:last-child {
+            margin-bottom: 0;
+        }   
     }
-    ul li {
-        margin-bottom: 5px;
-    }
-    ul ul li {
-        font-size: 1.4em; // 3rd niveau
-        margin-bottom: 5px;
+    
+    ul {
+        margin-top: -7px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        
+        li {
+            margin-bottom: 2px;
+            font-size: 1.4em; // 3rd niveau
+            a {
+                color: $color-base;
+            }
+        }
     }
 }
 
-.chapter-title {
+.panel-title {
     padding-top: 0;
     margin-top: 0;
+    
+    a,
+    a:hover {
+        color: $color-base;
+    }
 }
 .chapter-reading-time {
     color: #999999;
