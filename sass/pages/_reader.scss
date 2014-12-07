@@ -5,8 +5,8 @@
     background-color: $color-base;
     color: #fff;
     
-    .header,
-    .dropdown-active .header {
+    .header-content,
+    .dropdown-active .header-content {
         background-color: darken($color-base, 4%);
         
         .nav-item-icon,
