@@ -287,6 +287,11 @@ ul.toc-chapter {
         }
     }
 }
+.panel_disabled a:hover {
+    text-decoration: none;
+    cursor: default;
+    
+}
 
 .panel-title {
     padding-top: 0;
