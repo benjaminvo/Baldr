@@ -1,6 +1,11 @@
 .highlighter-container {
     margin-top: 40px;
     margin-left: -50px;
+    
+    .btn:hover {
+        background-color: #fff;
+        border-color: #ccc;
+    }
 }
 
 .highlighter-container:after {
@@ -23,11 +28,11 @@
     height: 20px;
     width: 20px;
     margin: 10px;
-    
-    &:hover {
-        transition: 0.2s all ease;
+}
+
+.highlighter-container .btn:hover .color-circle {
+        transition: all 0.2s ease;
         -webkit-transform: scale(1.5, 1.5);
-    }
 }
 
 .highlight-none-tooltip {
