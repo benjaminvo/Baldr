@@ -107,9 +107,7 @@ $(".nav-item_toc").click(function() {
 
 // Toggle dropdown, when user clicks on link in table of contents
 $('.toc-chapter a').click(function() {
-    $('.dropdown_toc').hide();
-    $("body").removeClass("dropdown-active");
-    $('.nav-item').removeClass('nav-item-active');
+    $('.nav-item_toc').trigger( "click" );
 });
 
 // DROPDOWN - SETTINGS
@@ -194,18 +192,12 @@ $('.nav-item_search').click(function() {
 // Dark/light mode
 $('.btn-dark').click(function() {
     $('body').addClass('dark-mode');
-    $('.dropdown_settings').hide();
-    $(".nav-arrow_settings").hide();
-    $("body").removeClass("dropdown-active");
-    $('.nav-item').removeClass('nav-item-active');
+    $('.nav-item_settings').trigger( "click" );
 });
 
 $('.btn-light').click(function() {
     $('body').removeClass('dark-mode');
-    $('.dropdown_settings').hide();
-    $(".nav-arrow_settings").hide();
-    $("body").removeClass("dropdown-active");
-    $('.nav-item').removeClass('nav-item-active');
+    $('.nav-item_settings').trigger( "click" );
 });
 
 // Font sizes
