@@ -58,6 +58,12 @@
     }
 }
 
+@media (max-width: $bp-medium) {
+    .search-result-sentence:hover {
+        text-decoration: none;
+    }
+}
+
 .search-result-sentence:last-child {
     margin-bottom: 0;
 }
