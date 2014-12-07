@@ -127,7 +127,7 @@
                             </div>
                         </div>  Panel-group end 
 -->
-                   
+
                     </div>
                     <div class="col-sm-6">
                         fag 2
@@ -212,7 +212,7 @@
                 <div class="row search-results">
                     <div class="col-sm-8 search-results-current">
 
-                            <h4>9 resultater i kapitel 1 af "Learning Web Design"</h4>
+                                <h4>9 resultater i kapitel 1 af "Learning Web Design"</h4>
                             
                             <div class="row search-result-current-wrapper"> <!-- 1. søgeresultat afsnit -->
                                 <div class="col-sm-3 search-result-location">
@@ -299,7 +299,7 @@
 
                         <div class="panel-group toc-wrapper" id="accordion" role="tablist" aria-multiselectable="true">
                             
-                            <h6 class="book-section-title">Part I - Getting Started</h6>   
+                            <h6 style="margin-bottom:10px;">Part I - Getting Started</h6>   
                             <div class="panel panel-default">
                                 <div class="panel-heading" role="tab" id="headingOne">
                                     <h5 class="panel-title">
@@ -409,7 +409,7 @@
                             
                             <!-- Disabled panels -->
                             
-                            <h6 class="book-section-title">Part II - HTML Markup for Structure</h6>
+                            <h6 style="margin-bottom:10px;">Part II - HTML Markup for Structure</h6>
                             
                             <div class="panel panel-default panel_disabled">
                                 <div class="panel-heading">
@@ -468,7 +468,7 @@
                                 </div>
                             </div>
                             
-                            <h6 class="book-section-title">Part III - CSS for Presentation</h6>
+                            <h6 style="margin-bottom:10px;">Part III - CSS for Presentation</h6>
                             
                             <div class="panel panel-default panel_disabled">
                                 <div class="panel-heading">
@@ -535,7 +535,7 @@
                                 </div>
                             </div>
                             
-                            <h6 class="book-section-title">Part IV - JavaScript for Behaviours</h6>
+                            <h6 style="margin-bottom:10px;">Part IV - JavaScript for Behaviours</h6>
                             
                             <div class="panel panel-default panel_disabled">
                                 <div class="panel-heading">
@@ -573,7 +573,7 @@
                                 </div>
                             </div>
                             
-                            <h6 class="book-section-title">Appendix A</h6>
+                            <h6 style="margin-bottom:10px;">Appendix A</h6>
                             
                             <div class="panel panel-default panel_disabled">
                                 <div class="panel-heading">
@@ -583,7 +583,7 @@
                                 </div>
                             </div>
                             
-                            <h6 class="book-section-title">Appendix B</h6>
+                            <h6 style="margin-bottom:10px;">Appendix B</h6>
                             
                             <div class="panel panel-default panel_disabled">
                                 <div class="panel-heading">
@@ -904,6 +904,28 @@
 <!--    <script src="js/vendor/annotator-full.min.js"></script> -->
         <script src="js/jQuery.highlighter.js"></script>
         <script src="js/main.js"></script>
+        
+        <script>
+//            $(function () {
+//              $('[data-toggle="tooltip"]').tooltip()
+//            })
+            
+            $('.nav-item').tooltip(
+                { delay: {"show": 800, "hide": 100} }
+            );
+            
+//            $('.nav-item-active').mouseover(function() {
+//                if ( $(this).hasClass('.nav-item-active') ) {
+//                    $('.nav-').tooltip(
+//                        { delay: {"show": 20000, "hide": 100} }
+//                    );
+//                }
+//            });
+            
+            //if ( $('body').hasClass('.dropdown-active') ) {
+            //    $('.nav-item').tooltip('disable');
+            //}
+        </script>
 
     </body>
 </html>
