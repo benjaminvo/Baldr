@@ -24,6 +24,12 @@ $('.dropdown')
     }
 );
 
+$('.main-content').click(function() {
+    if ( $("body").hasClass("dropdown-active") && $(".dropdown_settings:visible") ) {
+        $(".nav-item-active").trigger('click');
+    }
+});
+
 // DROPDOWN - TABLE OF CONTENTS
 $(".nav-item_toc").click(function() {
     
@@ -141,10 +147,18 @@ $('.nav-item_search').click(function() {
 // Dark/light mode
 $('.btn-dark').click(function() {
     $('body').addClass('dark-mode');
+    $('.dropdown_settings').hide();
+    $(".nav-arrow_settings").hide();
+    $("body").removeClass("dropdown-active");
+    $('.nav-item').removeClass('nav-item-active');
 });
 
 $('.btn-light').click(function() {
     $('body').removeClass('dark-mode');
+    $('.dropdown_settings').hide();
+    $(".nav-arrow_settings").hide();
+    $("body").removeClass("dropdown-active");
+    $('.nav-item').removeClass('nav-item-active');
 });
 
 // Font sizes
@@ -266,15 +280,30 @@ $(".btn-search").click(function() {
 });
 
 // Clicking a result from search list adds class search-result-active and hides dropdown and header becomes inactive
+//$('.search-result-sentence').click(function() {
+//    $('.search-result-text').css('color', '#58b957');
+//    $('.search-result-text').css('background-color', '#f6f6f6');
+//    $('.search-result-text').delay(2000).queue(function() {
+//                $('.search-result-text').css('color', '#000'); 
+//                $('.search-result-text').css('background-color', 'transparent');
+//    });
+//    $('.dropdown_search').hide();
+//    $(".nav-arrow_search").hide();
+//    $("body").removeClass("dropdown-active");
+//    $('.nav-item').removeClass('nav-item-active');
+//});
+
 $('.search-result-sentence').click(function() {
-    $('.search-result-text').css('background-color', 'lightgrey');
-    $('.search-result-text').delay(2000).queue(function() {
-                $('.search-result-text').css('background-color', 'transparent'); 
-    });
+    
     $('.dropdown_search').hide();
     $(".nav-arrow_search").hide();
     $("body").removeClass("dropdown-active");
     $('.nav-item').removeClass('nav-item-active');
+    
+    $(".search-result-text").setTimeout(function() {
+        $(this).css('color', '#58b957');
+        $(this).css('background-color', '#f6f6f6');
+    }, 1000);
 });
 
 // Smooth scrolling
