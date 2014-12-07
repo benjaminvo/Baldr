@@ -335,23 +335,6 @@ $('.search-result-sentence').click(function() {
     $('.nav-item').removeClass('nav-item-active');
 });
 
-// Smooth scrolling
-// http://css-tricks.com/snippets/jquery/smooth-scrolling/
-//$(function() {
-//  $('a[href*=#]:not([href=#])').click(function() {
-//    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-//      var target = $(this.hash);
-//      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-//      if (target.length) {
-//        $('html,body').animate({
-//          scrollTop: target.offset().top - 200
-//        }, 500);
-//        return false;
-//      }
-//    }
-//  });
-//});
-
 // Let user submit search form by pressing enter
 $('form').each(function() {
     $(this).find('input').keypress(function(e) {
@@ -387,3 +370,30 @@ $(document).scroll(function() {
         }
     });
 });
+
+// Anchor scroll with fixed header offset
+// Source: https://gist.github.com/HoundstoothSTL/5510082
+// Added .not('.panel-title a') in the beginning to make script not target panel-header links
+(function($) {
+
+  $('a[href*=#]:not([href=#])').not('.panel-title a').click(function() 
+  {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        || location.hostname == this.hostname) 
+    {
+
+      var target = $(this.hash),
+      headerHeight = $(".header-content").height() + 80; // Get fixed header height
+
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+
+      if (target.length) 
+      {
+        $('html,body').animate({
+          scrollTop: target.offset().top - headerHeight
+        }, 500);
+        return false;
+      }
+    }
+  });
+})(jQuery);
