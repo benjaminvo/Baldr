@@ -24,10 +24,43 @@ $('.dropdown')
     }
 );
 
+// Makes dropdown inactive when clicking outside of it
 $('.main-content').click(function() {
     if ( $("body").hasClass("dropdown-active") && $(".dropdown_settings:visible") ) {
         $(".nav-item-active").trigger('click');
     }
+});
+
+// DROPDOWN - DASHBOARD
+$('.nav-item_dashboard').click(function() {
+    
+    // Remove active class from other nav items
+    $('a.nav-item-active').not(this).removeClass('nav-item-active');
+    
+    // Give body classes
+    if ( !$(this).hasClass("nav-item-active") ) {
+        // Active dropdown class
+        $("body").addClass("dropdown-active");
+        // Overflow hidden class, so body does not scroll
+        $("body").addClass("overflow-hidden");
+    } else {
+        $("body").removeClass("dropdown-active");
+        $("body").removeClass("overflow-hidden");
+    }
+
+    // Toggle active class for nav item
+    $(this).toggleClass("nav-item-active");
+ 
+    // Untoggle the other dropdowns
+    $(".dropdown_settings").hide();
+    $(".dropdown_toc").hide();
+    $(".dropdown_search").hide();
+
+    // Toggle dropdown and arrow
+    $(".dropdown_dashboard").toggle();
+    
+    // Keeps header big, when dropdown is open
+    $("body").removeClass("header-inactive");
 });
 
 // DROPDOWN - TABLE OF CONTENTS
@@ -50,13 +83,10 @@ $(".nav-item_toc").click(function() {
     // Toggle active class for nav item
     $(this).toggleClass("nav-item-active");
     
-    // Untoggle search dropdown
-    $(".dropdown_search").hide();
-    $(".nav-arrow_search").hide();
-    
-    // Untoggle settings dropdown
+    // Untoggle the other dropdowns
     $(".dropdown_settings").hide();
-    $(".nav-arrow_settings").hide();
+    $(".dropdown_dashboard").hide();
+    $(".dropdown_search").hide();
     
     // Toggle dropdown and arrow
     $(".dropdown_toc").toggle();
@@ -87,13 +117,10 @@ $(".nav-item_settings").click(function() {
     // Toggle active class for nav item
     $(this).toggleClass("nav-item-active");
     
-    // Untoggle search dropdown
-    $(".dropdown_search").hide();
-    $(".nav-arrow_search").hide();
-    
-    // Untoggle toc dropdown
+    // Untoggle the other dropdowns
+    $(".dropdown_dashboard").hide();
     $(".dropdown_toc").hide();
-    $(".nav-arrow_toc").hide();
+    $(".dropdown_search").hide();
     
     // Toggle dropdown and arrow
     $(".dropdown_settings").toggle();
@@ -123,13 +150,10 @@ $('.nav-item_search').click(function() {
     // Toggle active class for nav item
     $(this).toggleClass("nav-item-active");
  
-    // Untoggle settings dropdown
+    // Untoggle the other dropdowns
     $(".dropdown_settings").hide();
-    $(".nav-arrow_settings").hide();
-
-    // Untoggle toc dropdown
     $(".dropdown_toc").hide();
-    $(".nav-arrow_toc").hide();
+    $(".dropdown_dashboard").hide();
 
     // Toggle dropdown and arrow
     $(".dropdown_search").toggle();
@@ -281,30 +305,17 @@ $(".btn-search").click(function() {
 });
 
 // Clicking a result from search list adds class search-result-active and hides dropdown and header becomes inactive
-//$('.search-result-sentence').click(function() {
-//    $('.search-result-text').css('color', '#58b957');
-//    $('.search-result-text').css('background-color', '#f6f6f6');
-//    $('.search-result-text').delay(2000).queue(function() {
-//                $('.search-result-text').css('color', '#000'); 
-//                $('.search-result-text').css('background-color', 'transparent');
-//    });
-//    $('.dropdown_search').hide();
-//    $(".nav-arrow_search").hide();
-//    $("body").removeClass("dropdown-active");
-//    $('.nav-item').removeClass('nav-item-active');
-//});
-
 $('.search-result-sentence').click(function() {
-    
+    $('.search-result-text').css('color', '#58b957');
+    $('.search-result-text').css('background-color', '#f6f6f6');
+    $('.search-result-text').delay(2000).queue(function() {
+                $('.search-result-text').css('color', '#000'); 
+                $('.search-result-text').css('background-color', 'transparent');
+    });
     $('.dropdown_search').hide();
     $(".nav-arrow_search").hide();
     $("body").removeClass("dropdown-active");
     $('.nav-item').removeClass('nav-item-active');
-    
-    $(".search-result-text").setTimeout(function() {
-        $(this).css('color', '#58b957');
-        $(this).css('background-color', '#f6f6f6');
-    }, 1000);
 });
 
 // Smooth scrolling
