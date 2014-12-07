@@ -26,45 +26,55 @@
         <!-- HEADER -->
         <header class="header" role="banner">
             
-            <!-- Reading indicator -->
-            <div class="reading-position-wrapper">
-                <progress class="reading-position-indicator" value="0"></progress>
-                <span class="reading-time"></span>
+            <div class="header-content">
+            
+                <!-- Reading indicator -->
+                <div class="reading-position-wrapper">
+                    <progress class="reading-position-indicator" value="0"></progress>
+                    <span class="reading-time"></span>
+                </div>
+
+                <div class="container">
+
+                    <!-- Left navigation -->                
+                    <ul class="header-nav header-nav_left">
+                        <!-- Home -->
+                        <li>
+                            <a class="nav-item nav-item_home" href="#">
+                                <span class="nav-item-icon glyphicon glyphicon-home" aria-hidden="true"></span>
+                            </a>
+                        </li>
+                        <!-- Table of Contents -->
+                        <li>
+                            <a class="nav-item nav-item_toc" href="javascript:void(0)">
+                                <span class="nav-item-icon glyphicon glyphicon-list" aria-hidden="true"></span><span class="nav-item-text chapter-current">Chapter 1: Where Do I Start?</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Right navigation --> 
+                    <ul class="header-nav header-nav_right">
+                        <!-- Settings -->
+                        <li>
+                            <a class="nav-item nav-item_settings" href="javascript:void(0);">
+                                <span class="nav-item-icon glyphicon glyphicon-cog" aria-hidden="true"></span>
+                            </a>
+                        </li>
+                        <!-- Search -->
+                        <li>
+                            <a class="nav-item nav-item_search" href="javascript:void(0);">
+                            <span class="nav-item-icon glyphicon glyphicon-search" aria-hidden="true"></span></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             
-            <div class="container">
-                
-                <!-- Left navigation -->                
-                <ul class="header-nav header-nav_left">
-                    <!-- Home -->
-                    <li>
-                        <a class="nav-item nav-item_home" href="#">
-                            <span class="nav-item-icon glyphicon glyphicon-home" aria-hidden="true"></span>
-                        </a>
-                    </li>
-                    <!-- Table of Contents -->
-                    <li>
-                        <a class="nav-item nav-item_toc" href="javascript:void(0)">
-                            <span class="nav-item-icon glyphicon glyphicon-list" aria-hidden="true"></span><span class="nav-item-text chapter-current">Chapter 1: Where Do I Start?</span>
-                        </a>
-                    </li>
-                </ul>
-                
-                <!-- Right navigation --> 
-                <ul class="header-nav header-nav_right">
-                    <!-- Settings -->
-                    <li>
-                        <a class="nav-item nav-item_settings" href="javascript:void(0);">
-                            <span class="nav-item-icon glyphicon glyphicon-cog" aria-hidden="true"></span>
-                        </a>
-                    </li>
-                    <!-- Search -->
-                    <li>
-                        <a class="nav-item nav-item_search" href="javascript:void(0);">
-                        <span class="nav-item-icon glyphicon glyphicon-search" aria-hidden="true"></span></a>
-                    </li>
-                </ul>
-            </div>
+            <!-- Reading collaborator -->
+            <div class="collaborator-main-content toggle-notes">
+                <a href="javascript:void(0);"><span>Anders' Highlights</span>
+                <img src="img/collaborator-2.png" alt="">
+            </a>
+        </div>
         </header>
         
         <!-- DROPDOWNS -->
@@ -533,7 +543,7 @@
                                 </div>
                             </div>
                             
-                        </div> <!--  -->
+                        </div>
                         
                     </div> <!-- /Inholdsfortegnelse --> 
                     
@@ -822,13 +832,6 @@
                 </button>                
             </div>
         </span>
-        
-        <!-- COLLABORATOR -->
-        <div class="collaborator-main-content toggle-notes">
-                <a href="javascript:void(0);"><span>Ander's Highlights</span>
-                <img src="img/collaborator-2.png" alt="">
-            </a>
-        </div>
         
         <!-- FOOTER -->
         <footer class="footer-reader">
