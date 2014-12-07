@@ -46,7 +46,7 @@
                         </li>
                         <!-- Table of Contents -->
                         <li>
-                            <a class="nav-item nav-item_toc" href="javascript:void(0)">
+                            <a class="nav-item nav-item_toc" href="javascript:void(0)" data-toggle="tooltip" data-placement="bottom" title="Indholdsfortegnelse">
                                 <span class="nav-item-icon glyphicon glyphicon-list" aria-hidden="true"></span><span class="nav-item-text chapter-current">Chapter 1: Where Do I Start?</span>
                             </a>
                         </li>
@@ -56,13 +56,13 @@
                     <ul class="header-nav header-nav_right">
                         <!-- Settings -->
                         <li>
-                            <a class="nav-item nav-item_settings" href="javascript:void(0);">
+                            <a class="nav-item nav-item_settings" href="javascript:void(0);" data-toggle="tooltip" data-placement="bottom" title="Læseindstillinger">
                                 <span class="nav-item-icon glyphicon glyphicon-cog" aria-hidden="true"></span>
                             </a>
                         </li>
                         <!-- Search -->
                         <li>
-                            <a class="nav-item nav-item_search" href="javascript:void(0);">
+                            <a class="nav-item nav-item_search" href="javascript:void(0);" data-toggle="tooltip" data-placement="bottom" title="Søg">
                             <span class="nav-item-icon glyphicon glyphicon-search" aria-hidden="true"></span></a>
                         </li>
                     </ul>
@@ -364,7 +364,7 @@
                             <div class="panel panel-default panel_disabled">
                                 <div class="panel-heading">
                                     <h5 class="panel-title chapter-title">
-                                        <a class="chapter-title collapsed">Chapter 5: Marking Up Text</a>
+                                        <a class="chapter-title collapsed" data-toggle="tooltip" data-placement="right" title="Kapitel 1-3 er tilgængelige">Chapter 5: Marking Up Text</a>
                                         <span class="chapter-reading-time"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> 1 time 10 min</span>
                                     </h5>
                                 </div>
@@ -846,6 +846,28 @@
 <!--    <script src="js/vendor/annotator-full.min.js"></script> -->
         <script src="js/jQuery.highlighter.js"></script>
         <script src="js/main.js"></script>
+        
+        <script>
+//            $(function () {
+//              $('[data-toggle="tooltip"]').tooltip()
+//            })
+            
+            $('.nav-item').tooltip(
+                { delay: {"show": 800, "hide": 100} }
+            );
+            
+//            $('.nav-item-active').mouseover(function() {
+//                if ( $(this).hasClass('.nav-item-active') ) {
+//                    $('.nav-').tooltip(
+//                        { delay: {"show": 20000, "hide": 100} }
+//                    );
+//                }
+//            });
+            
+            //if ( $('body').hasClass('.dropdown-active') ) {
+            //    $('.nav-item').tooltip('disable');
+            //}
+        </script>
 
     </body>
 </html>
