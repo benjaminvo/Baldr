@@ -279,20 +279,20 @@ $('.search-result-sentence').click(function() {
 
 // Smooth scrolling
 // http://css-tricks.com/snippets/jquery/smooth-scrolling/
-$(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top - 200
-        }, 500);
-        return false;
-      }
-    }
-  });
-});
+//$(function() {
+//  $('a[href*=#]:not([href=#])').click(function() {
+//    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+//      var target = $(this.hash);
+//      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+//      if (target.length) {
+//        $('html,body').animate({
+//          scrollTop: target.offset().top - 200
+//        }, 500);
+//        return false;
+//      }
+//    }
+//  });
+//});
 
 // Let user submit search form by pressing enter
 $('form').each(function() {
