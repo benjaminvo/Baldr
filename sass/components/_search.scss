@@ -131,7 +131,8 @@
 /*    jQUERY ELLER ANIMATION    */
 
 .search-result-text_active {
-    background-color: blue;
+    transition: background-color 1s ease-in;
+    background-color: #fafafa;
     color: $color-primary;
 }
 
