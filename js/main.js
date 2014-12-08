@@ -256,7 +256,7 @@ $(document).ready(function() {
     // Set the maximum scrollable area
     setMaxScroll();
 
-    // Scroll scripts for reading indicator
+    // Scroll scripts for reading time indicator
     $(document).on('scroll', function(){
 
         // Set reading value from scroll position
