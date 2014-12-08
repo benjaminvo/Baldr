@@ -325,8 +325,12 @@ $(document).ready(function() {
     });
 
     // Clicking a result from search list adds class search-result-active and hides dropdown and header becomes inactive
-    $('.search-result-sentence').click(function() {
-        $('.search-result-text').addClass("search-result-text_active");
+    $('a.search-result-sentence').click(function() {
+        
+        // Varible contains the #-href from the link being clicked
+        var resultNumber = $(this).attr('href');
+        
+        $(resultNumber).addClass("search-result-text_active");
         $(".nav-item_search").trigger("click");
 
             $(document).ready(function() {
