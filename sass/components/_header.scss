@@ -104,6 +104,10 @@
     }
     
     .nav-item-text {
+        display: inline-block;
+        padding-bottom: 4px;
+        vertical-align: middle;
+        
         margin-left: 5px;
         font-size: 14px;
         
@@ -111,7 +115,26 @@
             font-size: 16px;
             margin-left: 10px;
         }
+    }
+}
+
+@media(max-width: 500px) {
+    .nav-item_toc .nav-item-text {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
         
+        max-width: 250px;
+        
+        @media(max-width: 440px) {
+            max-width: 200px;
+        }
+        @media(max-width: 390px) {
+            max-width: 150px;
+        }
+        @media(max-width: 340px) {
+            max-width: 130px;
+        }
     }
 }
 
@@ -158,3 +181,11 @@
 .nav-item-active:hover .nav-item-icon:after {
     cursor: default;
 }
+
+// Cut current chapter at certain widths on small screens
+//.nav-item_toc {
+//    max-width: 250px;
+//    overflow: hidden;
+//    text-overflow: ellipsis;
+//    white-space: nowrap;
+//}
