@@ -37,6 +37,10 @@ $(document).ready(function() {
         }
     });
 
+    // DROPDOWN VARIABLES
+    
+    var toggleSpeed = 200;
+    
     // DROPDOWN - DASHBOARD
     $('.nav-item_dashboard').click(function() {
 
@@ -67,7 +71,7 @@ $(document).ready(function() {
         $(".dropdown_search").hide();
 
         // Toggle dropdown and arrow
-        $(".dropdown_dashboard").toggle();
+        $(".dropdown_dashboard").slideToggle(toggleSpeed);
 
         // Keeps header big, when dropdown is open
         $("body").removeClass("header-inactive");
@@ -103,8 +107,7 @@ $(document).ready(function() {
         $(".dropdown_search").hide();
 
         // Toggle dropdown and arrow
-        $(".dropdown_toc").toggle();
-        $(".nav-arrow_toc").toggle();
+        $(".dropdown_toc").slideToggle(toggleSpeed);
 
         // Keeps header big, when dropdown is open
         $("body").removeClass("header-inactive");
@@ -145,8 +148,7 @@ $(document).ready(function() {
         $(".dropdown_search").hide();
 
         // Toggle dropdown and arrow
-        $(".dropdown_settings").toggle();
-        $(".nav-arrow_settings").toggle();
+        $(".dropdown_settings").slideToggle(toggleSpeed);
 
         // Keeps header big, when dropdown is open
         $("body").removeClass("header-inactive");
@@ -182,8 +184,7 @@ $(document).ready(function() {
         $(".dropdown_dashboard").hide();
 
         // Toggle dropdown and arrow
-        $(".dropdown_search").toggle();
-        $(".nav-arrow_search").toggle();
+        $(".dropdown_search").slideToggle(toggleSpeed);
 
         // Keeps header big, when dropdown is open
         $("body").removeClass("header-inactive");
@@ -319,8 +320,7 @@ $(document).ready(function() {
 
     // Clicking on search shows the search results
     $(".btn-search").click(function() {
-        $('.search-results').css('display', 'block');
-        $('.search-results-pensum').css('display', 'block'); // burde kunne undlades, men virker dog ikke hvis man fjerne den?
+        $('.search-results').slideToggle(toggleSpeed);
         $('.form-control').val('experience');
     });
 
@@ -331,6 +331,7 @@ $(document).ready(function() {
         var resultNumber = $(this).attr('href');
         
         $(resultNumber).addClass("search-result-text_active");
+        
         $(".nav-item_search").trigger("click");
 
             $(document).ready(function() {
@@ -375,7 +376,7 @@ $(document).ready(function() {
                 // Replace chapter title in header with visible headline
                 $('.chapter-current').text(headline);
                 return false; // stops the iteration after the first one on screen
-            } else
+            }
         });
     });
 
