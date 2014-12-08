@@ -5,15 +5,25 @@
 }
 
 .reading-time {
+    position: absolute;
+    right: 15px;
+    top: 16px;
+    
+    font-size: 16px;
+    color: #ccc;
+    
+    transition: color .15s ease-in-out;
+    
     display: none;
     
     @media(min-width: $bp-medium) {
         display: inline;
-        position: absolute;
-        right: 10px;
-        top: 5px;
-        color: $color-base;
     }
+}
+
+.header:hover .reading-time,
+.dropdown-active .reading-time{
+    color: $color-primary;
 }
 
 .reading-position-indicator {
