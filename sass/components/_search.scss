@@ -126,9 +126,8 @@
 /*    jQUERY ELLER ANIMATION    */
 
 .search-result-text_active {
-    transition: background-color 1s ease-in;
-    background-color: #fafafa;
-    color: $color-primary;
+    background-color: $color-primary;
+    color: #fff;
 }
 
 // search-results-pensum er wrapper for alting under søgeresultater for denne tekst
