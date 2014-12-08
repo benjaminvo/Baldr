@@ -364,16 +364,18 @@ $(document).ready(function() {
 
     // Update table of contents text on scroll
     $(document).scroll(function() {
-        var cutoff = $(window).scrollTop();
+        var cutoff = $(window).scrollTop() + 115;
 
         $('.toc-element').each(function(){
-            if($(this).offset().top + $(this).height() > cutoff){
-                var headline = $(this).text();
+            if( $(this).offset().top + $(this).height() > cutoff ) {
+                // .prevAll() gets the previous toc-element and put it as headline as
+                //for some reason the function took the next element instead of the one showing in the viewport.
+                var headline = $(this).prevAll('.toc-element:first').text();
 
                 // Replace chapter title in header with visible headline
                 $('.chapter-current').text(headline);
                 return false; // stops the iteration after the first one on screen
-            }
+            } else
         });
     });
 
