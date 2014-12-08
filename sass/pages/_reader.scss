@@ -150,7 +150,7 @@
 
 img.collaborator-on {
     box-shadow: 0 0 0 2px $color-light-grey,
-                    0 0 0 4px $color-primary;
+                0 0 0 4px $color-primary;
     
     &:hover {
         box-shadow: 0 0 0 2px $color-light-grey,
@@ -166,15 +166,19 @@ img.collaborator-on {
     height: 100px;
     text-align: center;
     vertical-align: middle;
-    border-radius: 100%;
-    border: 3px solid #fff;
+    border-radius: 50%;
     display: inline-block;
     padding-top: 18px;
     
+    transition: all 0.25s ease-in-out;
+    
+    box-shadow: 0 0 0 2px $color-light-grey,
+                0 0 0 4px #ffffff;
+    
     &:hover {
-        transition: border 0.25s ease;
         text-decoration: none;
-        border: 3px solid $color-primary;
+        box-shadow: 0 0 0 2px $color-light-grey,
+                    0 0 0 4px $color-primary;
     }
 }
 
@@ -182,12 +186,13 @@ img.collaborator-on {
     color: $color-base;
     font-size: 3em;
     overflow: hidden;
+    //transition: color 0.25s ease;
 }
 
-.new-collaborator:hover .glyphicon {
-    transition: color 0.25s ease;
-    color: $color-primary;
-}
+//.new-collaborator:hover .glyphicon {
+//    
+//    color: $color-primary;
+//}
 
 .add-collaborator {
     display: block;
@@ -225,6 +230,8 @@ img.collaborator-on {
         max-height: 50px;
         box-shadow: 0 0 0 2px white,
                     0 0 0 4px $color-primary;
+        
+        transition: box-shadow .25s ease-in-out;
         
         &:hover {
             box-shadow: 0 0 0 2px white,
