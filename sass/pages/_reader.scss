@@ -56,12 +56,65 @@
         color: #fff;
     }
     
-    .new-collaborator {
-        border: 3px solid #fff;
+    .collaborators img { // Læsevenner > billeder
+        box-shadow: 0 0 0 2px lighten($color-base, 25%),
+                    0 0 0 4px #ffffff;
+
+        &:hover {
+            box-shadow: 0 0 0 2px lighten($color-base, 25%),
+                        0 0 0 4px $color-primary;
+        }
+    }
+
+    img.collaborator-on {
+        box-shadow: 0 0 0 2px lighten($color-base, 25%),
+                    0 0 0 4px $color-primary;
+
+        &:hover {
+            box-shadow: 0 0 0 2px lighten($color-base, 25%),
+                    0 0 0 4px #e43b3b;
+        }
+    }
+
+    .new-collaborator {        
+        box-shadow: 0 0 0 2px lighten($color-base, 25%),
+                    0 0 0 4px #ffffff;
+
+        &:hover {
+            text-decoration: none;
+            box-shadow: 0 0 0 2px lighten($color-base, 25%),
+                        0 0 0 4px $color-primary;
+        }
+    }
+    
+    .collaborator-main-content {
+    
+        img {
+            box-shadow: 0 0 0 2px lighten($color-base, 25%),
+                        0 0 0 4px $color-primary;
+
+            &:hover {
+                box-shadow: 0 0 0 2px lighten($color-base, 25%),
+                            0 0 0 4px #e43b3b;
+            }
+        }
     }
     
     .add-collaborator {
         color: #fff;
+    }
+        
+    .reading-position-indicator {
+        // Progress bar value for IE10+
+        color: #fff;
+        // Vendor pseudo elements to style the value
+        &::-webkit-progress-value {
+            background-color: #fff;
+        }
+
+        &::-moz-progress-bar {
+            background-color: #fff;
+        }
     }
 }
 
@@ -156,7 +209,6 @@ img.collaborator-on {
         box-shadow: 0 0 0 2px $color-light-grey,
                 0 0 0 4px #e43b3b;
     }
-    
 }
 
 .new-collaborator {
@@ -231,7 +283,7 @@ img.collaborator-on {
         box-shadow: 0 0 0 2px white,
                     0 0 0 4px $color-primary;
         
-        transition: box-shadow .25s ease-in-out;
+        transition: box-shadow .15s ease-in-out;
         
         &:hover {
             box-shadow: 0 0 0 2px white,
