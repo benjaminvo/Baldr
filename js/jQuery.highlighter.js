@@ -249,7 +249,7 @@
 
     };
 
-$('.main-content').highlighter();
+$('.own-notes').highlighter();
        
        $('.article').highlighter({
                            'selector': '.highlighter-container',
@@ -264,7 +264,7 @@ $(document).ready(function(){
        var highlight = window.getSelection();
        
         var spn = '<mark class="highlight-yellow">' + highlight + '</mark>';
-        $('.main-content').html($('.main-content').html().replace(highlight, spn));
+        $('.own-notes').html($('.own-notes').html().replace(highlight, spn));
         
         $(".highlighter-container").css("display", "none");
     });
@@ -276,7 +276,7 @@ $(document).ready(function(){
        var highlight = window.getSelection();
        
         var spn = '<mark class="highlight-green">' + highlight + '</mark>';
-        $('.main-content').html($('.main-content').html().replace(highlight, spn));
+        $('.own-notes').html($('.own-notes').html().replace(highlight, spn));
         
         $(".highlighter-container").css("display", "none");
     });
@@ -288,7 +288,7 @@ $(document).ready(function(){
        var highlight = window.getSelection();
        
         var spn = '<mark class="highlight-blue">' + highlight + '</mark>';
-        $('.main-content').html($('.main-content').html().replace(highlight, spn));
+        $('.own-notes').html($('.own-notes').html().replace(highlight, spn));
         
         $(".highlighter-container").css("display", "none");
     });
@@ -300,7 +300,7 @@ $(document).ready(function(){
        var highlight = window.getSelection();
        
         var spn = '<mark class="highlight-red">' + highlight + '</mark>';
-        $('.main-content').html($('.main-content').html().replace(highlight, spn));
+        $('.own-notes').html($('.own-notes').html().replace(highlight, spn));
         
         $(".highlighter-container").css("display", "none");
     });
@@ -312,7 +312,7 @@ $(document).ready(function(){
        var highlight = window.getSelection();
        
         var spn = '<mark class="highlight-purple">' + highlight + '</mark>';
-        $('.main-content').html($('.main-content').html().replace(highlight, spn));
+        $('.own-notes').html($('.own-notes').html().replace(highlight, spn));
         
         $(".highlighter-container").css("display", "none");
     });
@@ -324,7 +324,7 @@ $(document).ready(function(){
        var highlight = window.getSelection();
        
         var spn = '<mark class="highlight-none">' + highlight + '</mark>';
-        $('.main-content').html($('.main-content').html().replace(highlight, spn));
+        $('.own-notes').html($('.own-notes').html().replace(highlight, spn));
         
         $(".highlighter-container").css("display", "none");
     });
