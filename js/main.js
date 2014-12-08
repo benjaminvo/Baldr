@@ -187,11 +187,19 @@ $(document).ready(function() {
         // Toggle dropdown and arrow
         $(".dropdown_search").slideToggle(toggleSpeed);
 
+        // Blur search input field if dropdown is active
+        if ( $('body').hasClass("dropdown-active") ) {
+        
+            setTimeout(function(){
+                $(".form-control").focus();
+            }, 200);
+            
+        } else {
+            $(".form-control").blur();
+        }
+        
         // Keeps header big, when dropdown is open
         $("body").removeClass("header-inactive");
-
-        // Blur search input field
-        $(".form-control").focus();
     });
 
     // DROPDOWN - SETTINGS - BUTTONS
@@ -312,10 +320,9 @@ $(document).ready(function() {
         $('.collaborator-notes').toggleClass("visible");
         $('.collaborator-main-content').toggleClass("visible");
         $('.own-notes').toggleClass("not-visible");
-        $('.dropdown_settings').hide();
-        $(".nav-arrow_settings").hide();
-        $("body").removeClass("dropdown-active");
-        $('.nav-item').removeClass('nav-item-active');
+        
+        $(".nav-item-active").trigger('click');
+        
         $('.collaborators img').toggleClass("collaborator-on");
     });
 
