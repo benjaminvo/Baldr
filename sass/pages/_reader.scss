@@ -174,6 +174,16 @@
 
 // Dropdown - Settings
 
+.setting-group_theme {
+    margin-bottom: 20px;
+    
+    @media(min-width: $bp-medium) {
+        .setting-group_theme {
+            margin-bottom: 0;
+        }
+    }
+}
+
 .setting-font-size {
     font-family: $font-serif;
 }

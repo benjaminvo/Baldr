@@ -143,40 +143,42 @@
                     <div class="col-sm-6">
                         <h4>Udseende</h4>
                         <div class="row">
-                        <!-- Baggrundsfarve -->
-                        <div class="col-sm-6">
-                        <h6>Baggrundsfarve</h6>
-                        <div>
-                            <div class="btn-group" data-toggle="buttons">
-                                <label class="btn btn-default btn-font-size-medium btn-light active">
-                                    <input type="radio" name="options" autocomplete="off" checked>Lys
-                                </label>
-                                <label class="btn btn-default btn-dark btn-font-size-medium">
-                                    <input type="radio" name="options" autocomplete="off">Mørk
-                                </label>
+                            
+                            <!-- Baggrundsfarve -->
+                            <div class="col-md-6 setting-group_theme">
+                                <h6>Baggrundsfarve</h6>
+                                <div>
+                                    <div class="btn-group" data-toggle="buttons">
+                                        <label class="btn btn-default btn-font-size-medium btn-light active">
+                                            <input type="radio" name="options" autocomplete="off" checked>Lys
+                                        </label>
+                                        <label class="btn btn-default btn-dark btn-font-size-medium">
+                                            <input type="radio" name="options" autocomplete="off">Mørk
+                                        </label>
+                                    </div>
+                                </div>
+                            </div> <!-- Baggrundsfarve col end -->
+                            
+                            <!-- Skriftstørrelse -->
+                            <div class="col-md-6 setting-group_font-size">
+                                <h6>Skriftstørrelse</h6>
+                                <div class="setting-font-size">
+                                    <div class="btn-group" data-toggle="buttons">
+                                        <label class="btn btn-default active btn-reading-small">
+                                            <input type="radio" name="options" autocomplete="off" checked>
+                                            <span>A</span>
+                                        </label>
+                                        <label class="btn btn-default  btn-reading-medium">
+                                            <input type="radio" name="options" autocomplete="off">
+                                            <span class="btn-font-size-medium">A</span>
+                                        </label>
+                                        <label class="btn btn-default btn-reading-large">
+                                            <input type="radio" name="options" autocomplete="off">
+                                            <span class="btn-font-size-large">A</span>
+                                        </label>
+                                    </div>                           
+                                </div>
                             </div>
-                        </div>
-                        </div> <!-- Baggrundsfarve col end -->
-                        <div class="col-sm-6">
-                        <!-- Skriftstørrelse -->
-                        <h6>Skriftstørrelse</h6>
-                        <div class="setting-font-size">
-                            <div class="btn-group" data-toggle="buttons">
-                                <label class="btn btn-default active btn-reading-small">
-                                    <input type="radio" name="options" autocomplete="off" checked>
-                                    <span>A</span>
-                                </label>
-                                <label class="btn btn-default  btn-reading-medium">
-                                    <input type="radio" name="options" autocomplete="off">
-                                    <span class="btn-font-size-medium">A</span>
-                                </label>
-                                <label class="btn btn-default btn-reading-large">
-                                    <input type="radio" name="options" autocomplete="off">
-                                    <span class="btn-font-size-large">A</span>
-                                </label>
-                            </div>                           
-                        </div>
-                        </div>
                         </div> <!-- Udseende row end-->
                     </div><!-- Udseende col end -->
                     
@@ -185,7 +187,7 @@
                         <h4>Læsevenner</h4>
                         <ul class="collaborators">
                             <li><a href="javascript:void(0)" class="toggle-notes"><img src="img/collaborator-2.png" alt=""></a></li>
-                            <li><a href="javascript:void(0)" class="new-collaborator">
+                            <li><a href="javascript:void(0)" class="new-collaborator" data-toggle="tooltip" data-placement="bottom" title="Ikke tilgængeligt">
                                 <span class="glyphicon glyphicon-user"></span>
                                 <span class="add-collaborator">Tilføj læseven</span>
                                 </a>
