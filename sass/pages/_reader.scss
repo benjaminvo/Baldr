@@ -137,11 +137,12 @@
     max-width: 100px;
     border-radius: 50%;
     
+    transition: box-shadow 0.25s ease;
+    
     box-shadow: 0 0 0 2px $color-light-grey,
                 0 0 0 4px #ffffff;
     
     &:hover {
-        transition: box-shadow 0.25s ease;
         box-shadow: 0 0 0 2px $color-light-grey,
                     0 0 0 4px $color-primary;
     }
