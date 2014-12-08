@@ -197,12 +197,12 @@ $(document).ready(function() {
     // Dark/light mode
     $('.btn-dark').click(function() {
         $('body').addClass('dark-mode');
-        $('.nav-item_settings').trigger( "click" );
+        //$('.nav-item_settings').trigger( "click" );
     });
 
     $('.btn-light').click(function() {
         $('body').removeClass('dark-mode');
-        $('.nav-item_settings').trigger( "click" );
+        //$('.nav-item_settings').trigger( "click" );
     });
 
     // Font sizes
