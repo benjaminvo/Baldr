@@ -6,6 +6,7 @@ $(document).ready(function() {
     $('.toc-chapter a').tooltip();
     $('.chapter-title').tooltip();
     $('.new-collaborator').tooltip();
+    $('.chapter_next').tooltip();
     
     if (isLargeMedia.matches) {
         $('.nav-item').tooltip(
