@@ -4,6 +4,7 @@ $(document).ready(function() {
     // Enable tooltips on nav items
     $('.toc-chapter a').tooltip();
     $('.chapter-title').tooltip();
+    $('.new-collaborator').tooltip();
 
     $('.nav-item').tooltip(
         { delay: {"show": 800, "hide": 100} }
