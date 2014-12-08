@@ -1,15 +1,18 @@
 $(document).ready(function() {
     
+    var isLargeMedia = window.matchMedia("(min-width: 768px)");
+    
     // TOOLTIPS
-    // Enable tooltips on nav items
     $('.toc-chapter a').tooltip();
     $('.chapter-title').tooltip();
     $('.new-collaborator').tooltip();
-
-    $('.nav-item').tooltip(
-        { delay: {"show": 800, "hide": 100} }
-    );
-
+    
+    if (isLargeMedia.matches) {
+        $('.nav-item').tooltip(
+            { delay: {"show": 800, "hide": 100} }
+        );
+    }
+    
     // HEADER
     $(window).scroll(function() {
         if ($(this).scrollTop() > 20) {  
