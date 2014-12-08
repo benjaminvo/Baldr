@@ -90,11 +90,6 @@
 
 /*    STYLING FOR RESULTATER I PENSUM    */
 
-// search-results-pensum er wrapper for alting under søgeresultater for pensum
-.search-results-pensum {
-    display: none;
-}
-
 @media (max-width: $bp-small) {
     .search-results-pensum {
         margin-top: 15px;
