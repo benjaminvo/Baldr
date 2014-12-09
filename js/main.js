@@ -1,14 +1,13 @@
 $(document).ready(function() {
     
-    var isLargeMedia = window.matchMedia("(min-width: 768px)");
-    
     // TOOLTIPS
     $('.toc-chapter a').tooltip();
     $('.chapter-title').tooltip();
     $('.new-collaborator').tooltip();
     $('.chapter_next').tooltip();
     
-    if (isLargeMedia.matches) {
+    // Load nav item tool tips on larger media only
+    if (window.matchMedia("(min-width: 768px)").matches) {
         $('.nav-item').tooltip(
             { delay: {"show": 800, "hide": 100} }
         );
@@ -223,18 +222,27 @@ $(document).ready(function() {
     $('.btn-reading-small').click(function() {
         $('main').removeClass('large-reading'); 
         $('main').removeClass('medium-reading');
+        
+        $('.text-wrapper').removeClass('col-md-10 col-md-offset-1').addClass('col-md-8 col-md-offset-2');
+        
         resetReadingValue();
     });
 
     $('.btn-reading-medium').click(function() {
         $('main').removeClass('large-reading'); 
         $('main').addClass('medium-reading');
+        
+        $('.text-wrapper').removeClass('col-md-8 col-md-offset-2').addClass('col-md-10 col-md-offset-1');
+        
         resetReadingValue();
     });
 
     $('.btn-reading-large').click(function() {
         $('main').removeClass('medium-reading'); 
         $('main').addClass('large-reading');
+        
+        $('.text-wrapper').removeClass('col-md-8 col-md-offset-2').addClass('col-md-10 col-md-offset-1');
+        
         resetReadingValue();
     });
 
