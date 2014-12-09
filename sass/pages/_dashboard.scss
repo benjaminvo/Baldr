@@ -1,10 +1,32 @@
 /* PAGE: DASHBOARD */
 
 .dropdown_dashboard {    
-    h4 {
+    
+    //.dashboard-welcome {
+    //    margin-bottom: 0px;
+    //}
+    
+    .welcome-text {
         text-align: center;
         padding-bottom: 20px;
         position: relative;
+        
+        &:after {
+            position: absolute;
+            content: "";
+            border-bottom: 2px solid #ccc;
+            bottom: 0;
+            left: calc(50% - 50px);
+            width: 100px;
+        }
+    }
+
+    .continue-reading {
+        margin: 30px 0 40px;
+        
+        @media(min-width: $bp-small) {
+           margin: 80px 0 40px;
+        }
     }
     
     h5 {
@@ -12,26 +34,30 @@
         padding: 0 15px;
     }
     
-    h4:after {
-        position: absolute;
-        content: "";
-        border-bottom: 3px solid $color-primary;
-        bottom: 0;
-      left: calc(50% - 75px);
-        width: 150px;
+    .book-title {
+        font-family: $font-sans-serif-medium;
+    }
+    .book-author {
+        color: #B6B6B6;
     }
     
-    img {
-        max-width: 100%;
-        max-height: 600px;
-        box-shadow: 0 1px 4px 0 rgba(0,0,0,.25);
+    .reading-plan {
+        text-align: center;
     }
     
-    img.profile-image {
-        display: block;
-        margin: 0 auto;
-        border-radius: 50%;
-        border: 4px solid #fff;
-        margin-bottom: 20px;
+    .reading-plan img {
+        width: 100%;
+        
+        @media(min-width: 400px) {
+           max-width: 360px;
+        }
+        @media(min-width: $bp-medium) {
+           max-width: 100%;
+        }
     }
+        
+    .reading-plan-heading {
+        text-align: center;
+    }
+    
 }
