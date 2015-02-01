@@ -5,6 +5,7 @@ $(document).ready(function() {
     $('.chapter-title').tooltip();
     $('.new-collaborator').tooltip();
     $('.chapter_next').tooltip();
+    $('.nav-link').tooltip();
     
     // Load nav item tool tips on larger media only
     if (window.matchMedia("(min-width: 768px)").matches) {
@@ -336,6 +337,11 @@ $(document).ready(function() {
         $(".nav-item-active").trigger('click');
         
         $('.collaborators img').toggleClass("collaborator-on");
+    });
+
+    // Close dashboard when
+    $(".continue-reading-btn").click(function() {
+        $(".nav-item-active").trigger('click');
     });
 
     // Clicking on search shows the search results
