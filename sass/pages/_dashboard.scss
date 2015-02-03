@@ -93,6 +93,7 @@
     }
 
     .reading-plan-nav {
+        position: relative;
         height: 60px;
         border-bottom: 1px solid #cccccc;
 
@@ -137,6 +138,21 @@
         @media(min-width: $bp-medium) {
             .nav-link { width: 15%; }
             .nav-active { width: 70%; }
+        }
+
+        &:after {
+            background-image: url('../img/nav-arrow_no-shadow.png');
+            background-size: 20px 11px;
+            width: 20px;
+            height: 11px;
+            content: "";
+            position: absolute;
+            bottom: -11px;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            z-index: 200;
         }
     }
 
