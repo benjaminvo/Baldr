@@ -4,8 +4,8 @@ $(document).ready(function() {
     $('.toc-chapter a').tooltip();
     $('.chapter-title').tooltip();
     $('.new-collaborator').tooltip();
-    $('.chapter_next').tooltip();
     $('.nav-link').tooltip();
+    $('.btn').tooltip();
     
     // Load nav item tool tips on larger media only
     if (window.matchMedia("(min-width: 768px)").matches) {
