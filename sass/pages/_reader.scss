@@ -36,6 +36,15 @@
     .dropdown {
         background-color: lighten($color-base, 25%);
         color: #fff;
+
+        .reading-plan {
+            h4,
+            h5,
+            h6 {
+                color: $color-base;
+            }
+        }
+
     }
     
     mark {
@@ -434,7 +443,7 @@ ul.toc-chapter {
 }
 
 .book-author {
-    padding: 0;
+    padding: 0 15px;
     margin-top: 20px;
     
     p {

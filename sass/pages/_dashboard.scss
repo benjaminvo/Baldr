@@ -212,7 +212,11 @@
         .reading-plan-item:first-child,
         .reading-plan-item_done {
             border-right: 1px solid #cccccc;
-        }
-        
+        }  
     }  
+
+    .course-book-author {
+        display: block;
+        font-size: 85%;
+    }
 }
