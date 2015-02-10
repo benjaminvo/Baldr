@@ -266,13 +266,7 @@ img.collaborator-on {
     color: $color-base;
     font-size: 3em;
     overflow: hidden;
-    //transition: color 0.25s ease;
 }
-
-//.new-collaborator:hover .glyphicon {
-//    
-//    color: $color-primary;
-//}
 
 .add-collaborator {
     display: block;
@@ -288,7 +282,6 @@ img.collaborator-on {
     top: 0;
     left: 0;
 }
-
 
 .collaborator-main-content {
     a,
@@ -387,21 +380,21 @@ ul.toc-chapter {
         
         &:last-child {
             margin-bottom: 0;
-        }   
-    }
-    
-    ul {
-        margin-top: -7px;
-        padding-bottom: 10px;
-        padding-left: 20px;
-        
-        li {
-            margin-bottom: 2px;
-            font-size: 1.4em; // 3rd niveau
-            a {
-                color: $color-base;
-            }
         }
+
+        ul {
+            margin-top: 5px;
+            padding-bottom: 5;
+            padding-left: 20px;
+            
+            li {
+                margin-bottom: 2px;
+                font-size: 0.8em; // 3rd niveau
+                a {
+                    color: $color-base;
+                }
+            }
+        }   
     }
 }
 .panel_disabled a:hover {
