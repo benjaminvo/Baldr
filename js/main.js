@@ -289,38 +289,9 @@ $(document).ready(function() {
         valueProcent = (value/max)*100;
 
         // Display remaining reading time 
-        if  (valueProcent < 10) {
-            readingTime.html("10 min");
-        } else if 
-            (valueProcent > 10 && valueProcent < 20) {
-            readingTime.html("9 min");
-        } else if 
-            (valueProcent > 20 && valueProcent < 30) {
-            readingTime.html("8 min");
-        } else if 
-            (valueProcent > 30 && valueProcent < 40) {
-            readingTime.html("7 min");
-        } else if 
-            (valueProcent > 40 && valueProcent < 50) {
-            readingTime.html("6 min");
-        } else if 
-            (valueProcent > 50 && valueProcent < 60) {
-            readingTime.html("5 min");
-        } else if 
-            (valueProcent > 60 && valueProcent < 70) {
-            readingTime.html("4 min");
-        } else if 
-            (valueProcent > 70 && valueProcent < 80) {
-            readingTime.html("3 min");
-        } else if 
-            (valueProcent > 80 && valueProcent < 90) {
-            readingTime.html("2 min");
-        } else if 
-            (valueProcent > 90 && valueProcent < 100) {
-            readingTime.html("1 min");
-        } else {
-            readingTime.html("0 min");
-        }
+        var rest = 10 - Math.floor(valueProcent/10);
+        readingTime.html(rest + " min");
+    
     });
 
     // Recalculate reading value when user resizes window
